@@ -5,10 +5,3 @@ C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\bin
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\obj\Debug\SEImplementation.dll
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\obj\Debug\SEImplementation.pdb
-C:\Users\Warbook\Desktop\SE Implementation\2 SEImplementation - Website\SEImplementation\bin\SEImplementation.dll
-C:\Users\Warbook\Desktop\SE Implementation\2 SEImplementation - Website\SEImplementation\bin\SEImplementation.pdb
-C:\Users\Warbook\Desktop\SE Implementation\2 SEImplementation - Website\SEImplementation\bin\EntityFramework.dll
-C:\Users\Warbook\Desktop\SE Implementation\2 SEImplementation - Website\SEImplementation\bin\EntityFramework.xml
-C:\Users\Warbook\Desktop\SE Implementation\2 SEImplementation - Website\SEImplementation\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Warbook\Desktop\SE Implementation\2 SEImplementation - Website\SEImplementation\obj\Debug\SEImplementation.dll
-C:\Users\Warbook\Desktop\SE Implementation\2 SEImplementation - Website\SEImplementation\obj\Debug\SEImplementation.pdb

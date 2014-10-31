@@ -1,0 +1,9 @@
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\bin\Debug\Common.dll
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\bin\Debug\DataAccess.dll
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\bin\Debug\Common.pdb
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\bin\Debug\DataAccess.pdb
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\obj\Debug\BusinessLayer.pdb

@@ -1,0 +1,7 @@
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\bin\Debug\Common.dll
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\bin\Debug\Common.pdb
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\obj\Debug\DataAccess.pdb
