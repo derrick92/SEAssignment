@@ -35,6 +35,13 @@ namespace DataAccess.Repos
             Entity.SaveChanges();
         }
 
+        public void DeallocateUser(User u, Role r)
+        {
+            r.Users.Remove(u);
+            Entity.SaveChanges();
+        }
+
+
         public bool IsInRole(User u, Role r)
         {
             if (u.Roles.SingleOrDefault(x => x.RoleID == r.RoleID) == null)

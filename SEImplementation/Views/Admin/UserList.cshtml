@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Common.User>
+
+@{
+    ViewBag.Title = "User Account listing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User Account listing</h2>
+
+<table style="width:100%;">
+    <tr>
+        <th>
+            Username
+        </th>
+        <th>
+            FirstName
+        </th>
+        <th>
+            Surname
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Mobile Number
+        </th>
+        <th>Tools</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MobileNum)
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UserID }) |
+            @Html.ActionLink("Delete", "Delete", new { userID = item.UserID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -31,8 +31,22 @@ namespace BusinessLayer
             return new UserRepo().GetUserByUsername(u.Username);
         }
 
-        public void DeleteUser(int id)
+        public void DeleteUserDropAllRoles(int id)
         {
+            List<Role> rlist = new RoleRepo().GetRoles().ToList();
+
+            foreach (Role zr in rlist)
+            {
+                if (new RoleRepo().IsInRole(new UserRepo().GetUserByID(id), zr))
+                {
+                    UserRepo ur = new UserRepo();
+                    RoleRepo rr = new RoleRepo();
+                    ur.Entity = rr.Entity;
+                    User u = ur.GetUserByID(id);
+                    Role r = rr.GetRoleById(zr.RoleID);
+                    rr.DeallocateUser(u, r);
+                }
+            }
             new UserRepo().DeleteUser(id);
         }
 
