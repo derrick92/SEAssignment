@@ -1,0 +1,8 @@
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\SEImplementation.Tests.dll.config
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\SEImplementation.Tests.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\SEImplementation.Tests.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\SEImplementation.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\SEImplementation.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.pdb

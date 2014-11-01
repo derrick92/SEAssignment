@@ -5,3 +5,10 @@ C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\bin\Debug
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\DataAccess\obj\Debug\DataAccess.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\bin\Debug\DataAccess.dll
+E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\bin\Debug\DataAccess.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\bin\Debug\Common.dll
+E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\bin\Debug\Common.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\obj\Debug\DataAccess.dll
+E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\obj\Debug\DataAccess.pdb

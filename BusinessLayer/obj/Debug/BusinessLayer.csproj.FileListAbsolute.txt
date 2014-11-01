@@ -7,3 +7,12 @@ C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\bin\De
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\BusinessLayer\obj\Debug\BusinessLayer.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\bin\Debug\BusinessLayer.dll
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\bin\Debug\BusinessLayer.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\bin\Debug\Common.dll
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\bin\Debug\DataAccess.dll
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\bin\Debug\Common.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\bin\Debug\DataAccess.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\obj\Debug\BusinessLayer.dll
+E:\Desktop\School\SE Implementation\SEAssignment\BusinessLayer\obj\Debug\BusinessLayer.pdb

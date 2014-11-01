@@ -1,7 +1,7 @@
-C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\bin\SEImplementation.dll
-C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\bin\SEImplementation.pdb
-C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\bin\EntityFramework.dll
-C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\bin\EntityFramework.xml
-C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\obj\Debug\SEImplementation.dll
-C:\Users\Warbook\Desktop\SE Implementation\SEImplementation\SEImplementation\obj\Debug\SEImplementation.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\SEImplementation.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\SEImplementation.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\EntityFramework.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\EntityFramework.xml
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\obj\Debug\SEImplementation.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\obj\Debug\SEImplementation.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\obj\Debug\SEImplementation.pdb

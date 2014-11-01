@@ -8,18 +8,19 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
-[assembly: EdmRelationshipAttribute("SEshopModel", "FK_Products_Users", "Users", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Common.User), "Products", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Product), true)]
-[assembly: EdmRelationshipAttribute("SEshopModel", "UserRoles", "Roles", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Role), "Users", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.User))]
+[assembly: EdmRelationshipAttribute("SEshopModel", "FK_Products_Users", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Common.User), "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Product), true)]
+[assembly: EdmRelationshipAttribute("SEshopModel", "UserRoles", "Role", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Role), "User", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.User))]
 
 #endregion
 
@@ -120,6 +121,7 @@ namespace Common
         private ObjectSet<User> _Users;
 
         #endregion
+
         #region AddTo Methods
     
         /// <summary>
@@ -147,11 +149,11 @@ namespace Common
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region Entities
     
     /// <summary>
@@ -190,6 +192,7 @@ namespace Common
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -388,6 +391,7 @@ namespace Common
         partial void OnDateAddedChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -397,16 +401,16 @@ namespace Common
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "FK_Products_Users", "Users")]
+        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "FK_Products_Users", "User")]
         public User User
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("SEshopModel.FK_Products_Users", "Users").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("SEshopModel.FK_Products_Users", "User").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("SEshopModel.FK_Products_Users", "Users").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("SEshopModel.FK_Products_Users", "User").Value = value;
             }
         }
         /// <summary>
@@ -418,18 +422,19 @@ namespace Common
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("SEshopModel.FK_Products_Users", "Users");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("SEshopModel.FK_Products_Users", "User");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<User>("SEshopModel.FK_Products_Users", "Users", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<User>("SEshopModel.FK_Products_Users", "User", value);
                 }
             }
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -458,6 +463,7 @@ namespace Common
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -536,6 +542,7 @@ namespace Common
         partial void OnRoleDescChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -545,23 +552,24 @@ namespace Common
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "UserRoles", "Users")]
+        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "UserRoles", "User")]
         public EntityCollection<User> Users
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<User>("SEshopModel.UserRoles", "Users");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<User>("SEshopModel.UserRoles", "User");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<User>("SEshopModel.UserRoles", "Users", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<User>("SEshopModel.UserRoles", "User", value);
                 }
             }
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -598,6 +606,7 @@ namespace Common
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -772,6 +781,7 @@ namespace Common
         partial void OnMobileNumChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -781,18 +791,18 @@ namespace Common
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "FK_Products_Users", "Products")]
+        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "FK_Products_Users", "Product")]
         public EntityCollection<Product> Products
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Product>("SEshopModel.FK_Products_Users", "Products");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Product>("SEshopModel.FK_Products_Users", "Product");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Product>("SEshopModel.FK_Products_Users", "Products", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Product>("SEshopModel.FK_Products_Users", "Product", value);
                 }
             }
         }
@@ -803,25 +813,27 @@ namespace Common
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "UserRoles", "Roles")]
+        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "UserRoles", "Role")]
         public EntityCollection<Role> Roles
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Role>("SEshopModel.UserRoles", "Roles");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Role>("SEshopModel.UserRoles", "Role");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Role>("SEshopModel.UserRoles", "Roles", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Role>("SEshopModel.UserRoles", "Role", value);
                 }
             }
         }
 
         #endregion
+
     }
 
     #endregion
+
     
 }

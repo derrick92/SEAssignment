@@ -5,65 +5,65 @@
     <EntitySet Name="Roles" EntityType="SEshopModel.Role" />
     <EntitySet Name="Users" EntityType="SEshopModel.User" />
     <AssociationSet Name="FK_Products_Users" Association="SEshopModel.FK_Products_Users">
-      <End Role="Users" EntitySet="Users" />
-      <End Role="Products" EntitySet="Products" />
+      <End Role="User" EntitySet="Users" />
+      <End Role="Product" EntitySet="Products" />
     </AssociationSet>
     <AssociationSet Name="UserRoles" Association="SEshopModel.UserRoles">
-      <End Role="Roles" EntitySet="Roles" />
-      <End Role="Users" EntitySet="Users" />
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Product">
     <Key>
       <PropertyRef Name="ProductID" />
     </Key>
-    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="ProductDesc" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
-    <Property Name="ProductStock" Type="Int32" Nullable="false" />
-    <Property Name="ProductImage" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
-    <Property Name="ProductPrice" Type="Double" Nullable="false" />
-    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
-    <Property Name="DateAdded" Type="DateTime" Nullable="false" />
-    <NavigationProperty Name="User" Relationship="SEshopModel.FK_Products_Users" FromRole="Products" ToRole="Users" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductDesc" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ProductStock" Nullable="false" />
+    <Property Type="String" Name="ProductImage" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="ProductPrice" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="DateAdded" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="SEshopModel.FK_Products_Users" FromRole="Product" ToRole="User" />
   </EntityType>
   <EntityType Name="Role">
     <Key>
       <PropertyRef Name="RoleID" />
     </Key>
-    <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="RoleDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="Users" Relationship="SEshopModel.UserRoles" FromRole="Roles" ToRole="Users" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleDesc" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="SEshopModel.UserRoles" FromRole="Role" ToRole="User" />
   </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="UserID" />
     </Key>
-    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="Surname" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="Password" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
-    <Property Name="Email" Type="String" Nullable="false" MaxLength="70" Unicode="true" FixedLength="false" />
-    <Property Name="MobileNum" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Products" Relationship="SEshopModel.FK_Products_Users" FromRole="Users" ToRole="Products" />
-    <NavigationProperty Name="Roles" Relationship="SEshopModel.UserRoles" FromRole="Users" ToRole="Roles" />
+    <Property Type="Int32" Name="UserID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Surname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MobileNum" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="SEshopModel.FK_Products_Users" FromRole="User" ToRole="Product" />
+    <NavigationProperty Name="Roles" Relationship="SEshopModel.UserRoles" FromRole="User" ToRole="Role" />
   </EntityType>
   <Association Name="FK_Products_Users">
-    <End Role="Users" Type="SEshopModel.User" Multiplicity="1" />
-    <End Role="Products" Type="SEshopModel.Product" Multiplicity="*" />
+    <End Type="SEshopModel.User" Role="User" Multiplicity="1" />
+    <End Type="SEshopModel.Product" Role="Product" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Users">
+      <Principal Role="User">
         <PropertyRef Name="UserID" />
       </Principal>
-      <Dependent Role="Products">
+      <Dependent Role="Product">
         <PropertyRef Name="CreatedBy" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="UserRoles">
-    <End Role="Roles" Type="SEshopModel.Role" Multiplicity="*" />
-    <End Role="Users" Type="SEshopModel.User" Multiplicity="*" />
+    <End Type="SEshopModel.Role" Role="Role" Multiplicity="*" />
+    <End Type="SEshopModel.User" Role="User" Multiplicity="*" />
   </Association>
 </Schema>
