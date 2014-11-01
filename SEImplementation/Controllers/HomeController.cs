@@ -36,9 +36,56 @@ namespace SEImplementation.Controllers
                 u.Password = FormsAuthentication.HashPasswordForStoringInConfigFile(rm.Password, "MD5");
                 u.MobileNum = rm.MobileNum;
 
-                new UserBL().Create(u);
+                new UserBL().CreateUser(u);
                 return Redirect("/?registered=success");
             }
+        }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        //to post details
+
+
+        [HttpPost]
+        public ActionResult Login(Models.LoginModel lm)
+        {
+            if (new UserBL().DoesUserNameExist(lm.username))
+            {
+                User u = new UserBL().GetUserByUsername(lm.username);
+                try
+                {
+                    string password = FormsAuthentication.HashPasswordForStoringInConfigFile(lm.password, "MD5");
+
+                    if (new UserBL().isAuthenticated(lm.username, password))
+                    {
+                        FormsAuthentication.RedirectFromLoginPage(lm.username, true);
+                        return RedirectToAction("Index", "Home");
+                        
+                    }
+                    else
+                    {
+                        return View();
+                    }
+
+                }
+                catch
+                {
+                    return View();
+                }
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public ActionResult Logoff()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
         }
 
     }
