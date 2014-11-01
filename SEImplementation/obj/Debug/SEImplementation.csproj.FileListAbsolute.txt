@@ -5,3 +5,9 @@ E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\EntityFram
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\obj\Debug\SEImplementation.csprojResolveAssemblyReference.cache
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\obj\Debug\SEImplementation.dll
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\obj\Debug\SEImplementation.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\Common.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\Common.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\BusinessLayer.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\DataAccess.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\BusinessLayer.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\DataAccess.pdb

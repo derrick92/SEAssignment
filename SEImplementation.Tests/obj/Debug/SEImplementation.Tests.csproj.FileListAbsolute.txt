@@ -6,3 +6,9 @@ E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debu
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.csprojResolveAssemblyReference.cache
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.dll
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\Common.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\Common.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\BusinessLayer.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\DataAccess.dll
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\BusinessLayer.pdb
+E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\DataAccess.pdb

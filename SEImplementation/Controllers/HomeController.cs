@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Common;
+using BusinessLayer;
+
 
 namespace SEImplementation.Controllers
 {
@@ -19,5 +22,18 @@ namespace SEImplementation.Controllers
         {
             return View();
         }
+
+        public ActionResult Register()
+        {
+            return View(new User());
+        }
+
+        [HttpPost]
+        public ActionResult Register(User u)
+        {
+            new UserBL().Create(u);
+            return Redirect("/");
+        }
+
     }
 }
