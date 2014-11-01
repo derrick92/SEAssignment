@@ -44,9 +44,23 @@ namespace SEImplementation.Models
 
     public class RegisterModel
     {
+
         [Required]
-        [Display(Name = "User name")]
+        [Display(Name = "Username")]
         public string UserName { get; set; }
+
+        [Required]
+        [Display(Name = "Firstname")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Surname")]
+        public string Surname { get; set; }
+
+        [Required]
+        [DataType(DataType.PhoneNumber)]
+        [Display(Name = "Phone number")]
+        public int MobileNum { get; set; }
 
         [Required]
         [DataType(DataType.EmailAddress)]
