@@ -12,3 +12,10 @@ E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\bin\Debug\Common.pdb
 E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\obj\Debug\DataAccess.dll
 E:\Desktop\School\SE Implementation\SEAssignment\DataAccess\obj\Debug\DataAccess.pdb
+E:\Desktop\School\SE Implementation\TRALALA\DataAccess\bin\Debug\DataAccess.dll
+E:\Desktop\School\SE Implementation\TRALALA\DataAccess\bin\Debug\DataAccess.pdb
+E:\Desktop\School\SE Implementation\TRALALA\DataAccess\bin\Debug\Common.dll
+E:\Desktop\School\SE Implementation\TRALALA\DataAccess\bin\Debug\Common.pdb
+E:\Desktop\School\SE Implementation\TRALALA\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\TRALALA\DataAccess\obj\Debug\DataAccess.dll
+E:\Desktop\School\SE Implementation\TRALALA\DataAccess\obj\Debug\DataAccess.pdb

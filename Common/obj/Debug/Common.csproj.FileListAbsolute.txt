@@ -9,3 +9,9 @@ E:\Desktop\School\SE Implementation\SEAssignment\Common\bin\Debug\Common.dll
 E:\Desktop\School\SE Implementation\SEAssignment\Common\bin\Debug\Common.pdb
 E:\Desktop\School\SE Implementation\SEAssignment\Common\obj\Debug\Common.dll
 E:\Desktop\School\SE Implementation\SEAssignment\Common\obj\Debug\Common.pdb
+E:\Desktop\School\SE Implementation\TRALALA\Common\bin\Debug\Common.dll.config
+E:\Desktop\School\SE Implementation\TRALALA\Common\bin\Debug\Common.dll
+E:\Desktop\School\SE Implementation\TRALALA\Common\bin\Debug\Common.pdb
+E:\Desktop\School\SE Implementation\TRALALA\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\TRALALA\Common\obj\Debug\Common.dll
+E:\Desktop\School\SE Implementation\TRALALA\Common\obj\Debug\Common.pdb

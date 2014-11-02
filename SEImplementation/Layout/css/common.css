@@ -247,7 +247,7 @@ body div#footer div img:hover {
     margin: 0.5em 0 0 0;
 }
 
-.text-box {
+.text-box,input[type=password] {
     width: 30em;
 }
 
@@ -257,4 +257,25 @@ body div#footer div img:hover {
 
 .tri-state {
     width: 6em;
+}
+
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+    border: solid 1px #e8eef4;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4;
 }
