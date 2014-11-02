@@ -55,6 +55,7 @@ body div#mini-menu {
     height: 30px;
     width: 100%;
     color: #696f74;
+    border-bottom:1px solid #15171a;
 }
 body div#mini-menu div#mini-items {
     width: 1100px;

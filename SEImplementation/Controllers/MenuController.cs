@@ -18,7 +18,7 @@ namespace SEImplementation.Controllers
                     "<li> <a href=\"/product\">Browse Items</a></li>";
 
             string seller = allUser + "<li> <a href=\"/ProductManage\">Product Management</a></li>";
-            string buyer = allUser + "<li> <a href=\"/Become a Seller\">Seller</a></li>";
+            string buyer = allUser + "<li> <a href=\"/becomeseller\">Become a Seller</a></li>";
 
 
             //if admin
@@ -40,7 +40,7 @@ namespace SEImplementation.Controllers
                     return buyer;
                 }
             }
-                //if anoymous
+            //if anoymous
             else
             {
                 return allUser;

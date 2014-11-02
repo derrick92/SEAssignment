@@ -9,6 +9,7 @@ namespace SEImplementation.Models
 {
     public class RegisterModel
     {
+        public int UserID{ get; set; }
 
         [Required]
         [Display(Name = "Username")]
