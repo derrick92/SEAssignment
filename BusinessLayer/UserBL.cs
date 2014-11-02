@@ -98,6 +98,16 @@ namespace BusinessLayer
             rr.AllocateRole(u, r);
         }
 
+        public void BecomeSeller(string username)
+        {
+            UserRepo ur = new UserRepo();
+            RoleRepo rr = new RoleRepo();
+            ur.Entity = rr.Entity;
+            User u = ur.GetUserByUsername(username);
+            Role r = rr.GetRoleById(4);
+            rr.AllocateRole(u, r);
+        }
+
         public bool DoesUserNameExist(string username)
         {
             return new UserRepo().DoesUsernameExist(username);
