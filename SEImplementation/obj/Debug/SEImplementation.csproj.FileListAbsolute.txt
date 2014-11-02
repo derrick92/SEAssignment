@@ -11,3 +11,16 @@ E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\BusinessLa
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\DataAccess.dll
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\BusinessLayer.pdb
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation\bin\DataAccess.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\SEImplementation.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\SEImplementation.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\BusinessLayer.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\Common.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\EntityFramework.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\DataAccess.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\BusinessLayer.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\Common.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\EntityFramework.xml
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\DataAccess.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\obj\Debug\SEImplementation.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\obj\Debug\SEImplementation.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\obj\Debug\SEImplementation.pdb

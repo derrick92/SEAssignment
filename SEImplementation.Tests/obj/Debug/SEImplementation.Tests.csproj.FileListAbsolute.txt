@@ -12,3 +12,17 @@ E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debu
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\DataAccess.dll
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\BusinessLayer.pdb
 E:\Desktop\School\SE Implementation\SEAssignment\SEImplementation.Tests\bin\Debug\DataAccess.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\SEImplementation.Tests.dll.config
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\SEImplementation.Tests.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\SEImplementation.Tests.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\SEImplementation.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\BusinessLayer.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\Common.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\DataAccess.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\SEImplementation.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\BusinessLayer.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\Common.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\bin\Debug\DataAccess.pdb
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.csprojResolveAssemblyReference.cache
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.dll
+E:\Desktop\School\SE Implementation\TRALALA\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.pdb
