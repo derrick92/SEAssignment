@@ -24,9 +24,13 @@ namespace SEImplementation.Controllers
                     new UserBL().BecomeSeller(u.Username);
                     return Redirect("~/?access=successfully");
                 }
+                else
+                {
+                    return Redirect("~/?access=alreadyaseller");
+                }
             }
 
-            return Redirect("~/?access=alreadyaseller");
+            return Redirect("~/?errormsg=notlogged");
         }
 
     }
