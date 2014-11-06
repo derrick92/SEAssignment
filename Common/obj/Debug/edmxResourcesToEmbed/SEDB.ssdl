@@ -1,10 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SEshopModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="SEshopModelStoreContainer">
+    <EntitySet Name="PermissionRoles" EntityType="SEshopModel.Store.PermissionRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Permissions" EntityType="SEshopModel.Store.Permissions" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Products" EntityType="SEshopModel.Store.Products" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Roles" EntityType="SEshopModel.Store.Roles" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="UserRoles" EntityType="SEshopModel.Store.UserRoles" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Users" EntityType="SEshopModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_PermissionRoles_Permissions" Association="SEshopModel.Store.FK_PermissionRoles_Permissions">
+      <End Role="Permissions" EntitySet="Permissions" />
+      <End Role="PermissionRoles" EntitySet="PermissionRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PermissionRoles_Roles" Association="SEshopModel.Store.FK_PermissionRoles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="PermissionRoles" EntitySet="PermissionRoles" />
+    </AssociationSet>
     <AssociationSet Name="FK_Products_Users" Association="SEshopModel.Store.FK_Products_Users">
       <End Role="Users" EntitySet="Users" />
       <End Role="Products" EntitySet="Products" />
@@ -18,6 +28,22 @@
       <End Role="UserRoles" EntitySet="UserRoles" />
     </AssociationSet>
   </EntityContainer>
+  <EntityType Name="PermissionRoles">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Permissions">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PermissionDescription" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
   <EntityType Name="Products">
     <Key>
       <PropertyRef Name="ProductID" />
@@ -55,10 +81,34 @@
     <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
     <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
     <Property Name="Surname" Type="nvarchar" Nullable="false" MaxLength="50" />
-    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="500" />
     <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="70" />
     <Property Name="MobileNum" Type="int" Nullable="false" />
   </EntityType>
+  <Association Name="FK_PermissionRoles_Permissions">
+    <End Role="Permissions" Type="SEshopModel.Store.Permissions" Multiplicity="1" />
+    <End Role="PermissionRoles" Type="SEshopModel.Store.PermissionRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permissions">
+        <PropertyRef Name="PermissionID" />
+      </Principal>
+      <Dependent Role="PermissionRoles">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PermissionRoles_Roles">
+    <End Role="Roles" Type="SEshopModel.Store.Roles" Multiplicity="1" />
+    <End Role="PermissionRoles" Type="SEshopModel.Store.PermissionRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="PermissionRoles">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Products_Users">
     <End Role="Users" Type="SEshopModel.Store.Users" Multiplicity="1" />
     <End Role="Products" Type="SEshopModel.Store.Products" Multiplicity="*" />

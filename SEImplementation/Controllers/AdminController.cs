@@ -7,6 +7,7 @@ using Common;
 using BusinessLayer;
 using SEImplementation.Models;
 using System.Web.Security;
+using SEImplementation.Classes;
 
 namespace SEImplementation.Controllers
 {
@@ -19,8 +20,7 @@ namespace SEImplementation.Controllers
         {
             if (User.Identity.Name != string.Empty)
             {
-                User u = new UserBL().GetUserByUsername(User.Identity.Name);
-                if (new RoleBL().IsInRole(u.UserID, 1))
+                if (new RoleChecker().checkIfAdmin(User.Identity.Name))
                 {
                     return View();
                 }
@@ -33,9 +33,7 @@ namespace SEImplementation.Controllers
         {
             if (User.Identity.Name != string.Empty)
             {
-                User u = new UserBL().GetUserByUsername(User.Identity.Name);
-                if (new RoleBL().IsInRole(u.UserID, 1))
-                {
+                if (new RoleChecker().checkIfAdmin(User.Identity.Name)){
                     List<User> users = new UserBL().GetAllUsers().ToList();
                     return View("userlist", users);
                 }
@@ -44,7 +42,7 @@ namespace SEImplementation.Controllers
             return Redirect("~/?access=noAccess");
         }
 
-        public ActionResult Delete(int userid)
+        public ActionResult DeleteUser(int userid)
         {
             try
             {
@@ -57,25 +55,32 @@ namespace SEImplementation.Controllers
             }
         }
 
-        public ActionResult Edit(int userid)
+        public ActionResult EditUser(int userid)
         {
-            RegisterModel rm = new RegisterModel();
-            User u = new UserBL().GetUserByID(userid);
-            rm.UserID = u.UserID;
-            rm.UserName = u.Username;
-            rm.FirstName = u.FirstName;
-            rm.Surname = u.Surname;
-            rm.Password = "";
-            rm.Email = u.Email;
-            rm.MobileNum = u.MobileNum;
+            if (new RoleChecker().checkIfAdmin(User.Identity.Name))
+            {
+                RegisterModel rm = new RegisterModel();
+                User u = new UserBL().GetUserByID(userid);
+                rm.UserID = u.UserID;
+                rm.UserName = u.Username;
+                rm.FirstName = u.FirstName;
+                rm.Surname = u.Surname;
+                rm.Password = "";
+                rm.Email = u.Email;
+                rm.MobileNum = u.MobileNum;
 
 
 
-            return View(rm);
+                return View(rm);
+            }
+            else
+            {
+                return Redirect("~/?access=noAccess");
+            }
         }
 
         [HttpPost]
-        public ActionResult Edit(RegisterModel rm)
+        public ActionResult EditUser(RegisterModel rm)
         {
             try
             {

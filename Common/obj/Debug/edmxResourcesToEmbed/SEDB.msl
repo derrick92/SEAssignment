@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="SEshopModelStoreContainer" CdmEntityContainer="SEshopEntities">
+    <EntitySetMapping Name="Permissions">
+      <EntityTypeMapping TypeName="SEshopModel.Permission">
+        <MappingFragment StoreEntitySet="Permissions">
+          <ScalarProperty Name="PermissionDescription" ColumnName="PermissionDescription" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="SEshopModel.Product">
         <MappingFragment StoreEntitySet="Products">
@@ -37,6 +46,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <AssociationSetMapping Name="PermissionRoles" TypeName="SEshopModel.PermissionRoles" StoreEntitySet="PermissionRoles">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+      </EndProperty>
+      <EndProperty Name="Permission">
+        <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+      </EndProperty>
+    </AssociationSetMapping>
     <AssociationSetMapping Name="UserRoles" TypeName="SEshopModel.UserRoles" StoreEntitySet="UserRoles">
       <EndProperty Name="User">
         <ScalarProperty Name="UserID" ColumnName="UserID" />

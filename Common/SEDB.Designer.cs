@@ -20,6 +20,7 @@ using System.Xml.Serialization;
 #region EDM Relationship Metadata
 
 [assembly: EdmRelationshipAttribute("SEshopModel", "FK_Products_Users", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Common.User), "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Product), true)]
+[assembly: EdmRelationshipAttribute("SEshopModel", "PermissionRoles", "Permission", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Permission), "Role", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Role))]
 [assembly: EdmRelationshipAttribute("SEshopModel", "UserRoles", "Role", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.Role), "User", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Common.User))]
 
 #endregion
@@ -75,6 +76,22 @@ namespace Common
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<Permission> Permissions
+        {
+            get
+            {
+                if ((_Permissions == null))
+                {
+                    _Permissions = base.CreateObjectSet<Permission>("Permissions");
+                }
+                return _Permissions;
+            }
+        }
+        private ObjectSet<Permission> _Permissions;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<Product> Products
         {
             get
@@ -125,6 +142,14 @@ namespace Common
         #region AddTo Methods
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the Permissions EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToPermissions(Permission permission)
+        {
+            base.AddObject("Permissions", permission);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the Products EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddToProducts(Product product)
@@ -155,6 +180,141 @@ namespace Common
     #endregion
 
     #region Entities
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="SEshopModel", Name="Permission")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Permission : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new Permission object.
+        /// </summary>
+        /// <param name="permissionID">Initial value of the PermissionID property.</param>
+        /// <param name="permissionName">Initial value of the PermissionName property.</param>
+        /// <param name="permissionDescription">Initial value of the PermissionDescription property.</param>
+        public static Permission CreatePermission(global::System.Int32 permissionID, global::System.String permissionName, global::System.String permissionDescription)
+        {
+            Permission permission = new Permission();
+            permission.PermissionID = permissionID;
+            permission.PermissionName = permissionName;
+            permission.PermissionDescription = permissionDescription;
+            return permission;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PermissionID
+        {
+            get
+            {
+                return _PermissionID;
+            }
+            set
+            {
+                if (_PermissionID != value)
+                {
+                    OnPermissionIDChanging(value);
+                    ReportPropertyChanging("PermissionID");
+                    _PermissionID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("PermissionID");
+                    OnPermissionIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _PermissionID;
+        partial void OnPermissionIDChanging(global::System.Int32 value);
+        partial void OnPermissionIDChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String PermissionName
+        {
+            get
+            {
+                return _PermissionName;
+            }
+            set
+            {
+                OnPermissionNameChanging(value);
+                ReportPropertyChanging("PermissionName");
+                _PermissionName = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("PermissionName");
+                OnPermissionNameChanged();
+            }
+        }
+        private global::System.String _PermissionName;
+        partial void OnPermissionNameChanging(global::System.String value);
+        partial void OnPermissionNameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String PermissionDescription
+        {
+            get
+            {
+                return _PermissionDescription;
+            }
+            set
+            {
+                OnPermissionDescriptionChanging(value);
+                ReportPropertyChanging("PermissionDescription");
+                _PermissionDescription = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("PermissionDescription");
+                OnPermissionDescriptionChanged();
+            }
+        }
+        private global::System.String _PermissionDescription;
+        partial void OnPermissionDescriptionChanging(global::System.String value);
+        partial void OnPermissionDescriptionChanged();
+
+        #endregion
+
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "PermissionRoles", "Role")]
+        public EntityCollection<Role> Roles
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Role>("SEshopModel.PermissionRoles", "Role");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Role>("SEshopModel.PermissionRoles", "Role", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
     
     /// <summary>
     /// No Metadata Documentation available.
@@ -545,6 +705,28 @@ namespace Common
 
     
         #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SEshopModel", "PermissionRoles", "Permission")]
+        public EntityCollection<Permission> Permissions
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Permission>("SEshopModel.PermissionRoles", "Permission");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Permission>("SEshopModel.PermissionRoles", "Permission", value);
+                }
+            }
+        }
     
         /// <summary>
         /// No Metadata Documentation available.

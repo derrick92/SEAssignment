@@ -24,3 +24,16 @@ E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\bin\DataAccess.pdb
 E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\obj\Debug\SEImplementation.csprojResolveAssemblyReference.cache
 E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\obj\Debug\SEImplementation.dll
 E:\Desktop\School\SE Implementation\TRALALA\SEImplementation\obj\Debug\SEImplementation.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\SEImplementation.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\SEImplementation.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\BusinessLayer.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\Common.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\EntityFramework.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\DataAccess.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\BusinessLayer.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\Common.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\EntityFramework.xml
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\DataAccess.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\obj\Debug\SEImplementation.csprojResolveAssemblyReference.cache
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\obj\Debug\SEImplementation.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\obj\Debug\SEImplementation.pdb

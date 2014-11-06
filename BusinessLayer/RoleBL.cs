@@ -21,5 +21,13 @@ namespace BusinessLayer
                 ur.GetUserByID(userid),
                 rr.GetRoleById(roleId));
         }
+
+        public IEnumerable<Role> GetUserRoles(User u)
+        {
+            return new RoleRepo().GetUserRoles(u);
+        }
+
+
+
     }
 }

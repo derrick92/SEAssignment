@@ -63,6 +63,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\RoleChecker.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BecomeSellerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -169,7 +170,7 @@
     <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Admin\Edit.cshtml" />
+    <Content Include="Views\Admin\EditUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\BecomeSeller\Index.cshtml" />

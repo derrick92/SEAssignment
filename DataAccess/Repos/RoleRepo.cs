@@ -18,6 +18,12 @@ namespace DataAccess.Repos
             return Entity.Roles;
         }
 
+
+        public IEnumerable<Role> GetUserRoles(User u)
+        {
+            return u.Roles;
+        }
+
         public Role GetRoleById(int id)
         {
             return Entity.Roles.SingleOrDefault(x => x.RoleID == id);
