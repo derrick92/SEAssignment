@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Common;
 using BusinessLayer;
+using SEImplementation.Classes;
 
 
 namespace SEImplementation.Controllers
@@ -24,18 +25,17 @@ namespace SEImplementation.Controllers
             //if admin
             if (User.Identity.Name != string.Empty)
             {
-                User u = new UserBL().GetUserByUsername(User.Identity.Name);
-                if (new RoleBL().IsInRole(u.UserID, 1))
+                if (new RoleChecker().checkIfAdmin(User.Identity.Name))
                 {
                     return seller + "<li> <a href=\"/admin\">Admin Tools</a></li>";
                 }
                 //else if seller
-                else if (new RoleBL().IsInRole(u.UserID, 4))
+                else if (new RoleChecker().checkIfSeller(User.Identity.Name))
                 {
                     return seller;
                 }
                 //else if buyer
-                else if (new RoleBL().IsInRole(u.UserID, 2))
+                else if (new RoleChecker().checkIfBuyer(User.Identity.Name))
                 {
                     return buyer;
                 }
