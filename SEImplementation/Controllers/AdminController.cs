@@ -26,7 +26,7 @@ namespace SEImplementation.Controllers
                 }
             }
 
-            return Redirect("~/?access=noaccess");
+            return Redirect("~/?msg=noaccess");
         }
 
         public ActionResult UserList()
@@ -39,7 +39,7 @@ namespace SEImplementation.Controllers
                 }
             }
 
-            return Redirect("~/?access=noAccess");
+            return Redirect("~/?msg=noaccess");
         }
 
         public ActionResult DeleteUser(int userid)
@@ -47,11 +47,11 @@ namespace SEImplementation.Controllers
             try
             {
                 new UserBL().DeleteUserDropAllRoles(userid);
-                return Redirect("~/admin/userlist?deleted=successful");
+                return Redirect("~/admin/userlist?msg=deletedsuccessful");
             }
             catch
             {
-                return Redirect("~/admin/userlist?deleted=unsuccessful");
+                return Redirect("~/admin/userlist?msg=deleteunsuccessful");
             }
         }
 
@@ -75,7 +75,7 @@ namespace SEImplementation.Controllers
             }
             else
             {
-                return Redirect("~/?access=noAccess");
+                return Redirect("~/?msg=noaccess");
             }
         }
 
@@ -86,7 +86,7 @@ namespace SEImplementation.Controllers
             {
                 User u = new UserBL().GetUserByID(rm.UserID);
                 if ((new UserBL().DoesUserNameExist(rm.UserName)) && (u.Username != rm.UserName))
-                { return Redirect("/admin/userlist?errormsg=usernametaken"); }
+                { return Redirect("/admin/userlist?msg=usernametaken"); }
                 else
                 {
                     u = new User();
@@ -103,7 +103,7 @@ namespace SEImplementation.Controllers
             }
             catch
             {
-                return Redirect("/admin/userlist?errormsg=nochangessaved");
+                return Redirect("/admin/userlist?msg=nochangessaved");
             }
         }
 

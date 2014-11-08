@@ -68,6 +68,8 @@
             @Html.EditorFor(model => model.ConfirmPassword)
             @Html.ValidationMessageFor(model => model.ConfirmPassword)
         </div>
+    
+    @Html.Action("UserRoleList", "Roles")
 
         <p>
             <input type="submit" value="Save" />

@@ -22,15 +22,15 @@ namespace SEImplementation.Controllers
                 if (!new RoleBL().IsInRole(u.UserID, 4))
                 {
                     new UserBL().BecomeSeller(u.Username);
-                    return Redirect("~/?access=successfully");
+                    return Redirect("~/?msg=successfully");
                 }
                 else
                 {
-                    return Redirect("~/?access=alreadyaseller");
+                    return Redirect("~/?msg=alreadyaseller");
                 }
             }
 
-            return Redirect("~/?errormsg=notlogged");
+            return Redirect("~/?msg=notlogged");
         }
 
     }

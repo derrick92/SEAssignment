@@ -23,9 +23,9 @@ namespace SEImplementation.Controllers
         [HttpPost]
         public ActionResult Register(Models.RegisterModel rm)
         {
-            if (new UserBL().DoesEmailExist(rm.UserName) && new UserBL().DoesUserNameExist(rm.UserName)) { return Redirect("/home/register?registered=userandemailtaken"); }
-            else if (new UserBL().DoesEmailExist(rm.UserName)) { return Redirect("/home/register?registered=emailtaken"); }
-            else if (new UserBL().DoesUserNameExist(rm.UserName)) { return Redirect("/home/register?registered=usernametaken"); }
+            if (new UserBL().DoesEmailExist(rm.UserName) && new UserBL().DoesUserNameExist(rm.UserName)) { return Redirect("/home/register?msg=userandemailtaken"); }
+            else if (new UserBL().DoesEmailExist(rm.UserName)) { return Redirect("/home/register?msg=emailtaken"); }
+            else if (new UserBL().DoesUserNameExist(rm.UserName)) { return Redirect("/home/register?msg=usernametaken"); }
             else
             {
                 User u = new User();
@@ -37,7 +37,7 @@ namespace SEImplementation.Controllers
                 u.MobileNum = rm.MobileNum;
 
                 new UserBL().CreateUser(u);
-                return Redirect("/?registered=success");
+                return Redirect("/?msg=success");
             }
         }
 

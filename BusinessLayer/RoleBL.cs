@@ -27,6 +27,16 @@ namespace BusinessLayer
             return new RoleRepo().GetUserRoles(u);
         }
 
+        public void dropRole(int userid, int roleid)
+        {
+            UserRepo ur = new UserRepo();
+            RoleRepo rr = new RoleRepo();
+            ur.Entity = rr.Entity;
+            User u = ur.GetUserByID(userid);
+            Role r = rr.GetRoleById(roleid);
+            rr.DeallocateUser(u, r);
+        }
+
 
 
     }

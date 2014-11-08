@@ -1,0 +1,37 @@
+﻿@model IEnumerable<SEImplementation.Models.RoleModel>
+@{ Layout = null; }
+<p>
+    @Html.ActionLink("Allocate a new Role with User", "Create")
+</p>
+<br />
+<div class="fleft">
+    <table>
+        <tr>
+            <th>
+                Role Name
+            </th>
+            <th>
+                Role Description
+            </th>
+            <th>
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleDesc)
+                </td>
+                <td>
+                    @Html.ActionLink("Remove Role from User", "DeallocateRole", new { userid = item.UserID, roleid = item.RoleID })
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<div class="clear">
+</div>
+<br />

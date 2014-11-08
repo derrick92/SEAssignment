@@ -9,7 +9,7 @@ namespace SEImplementation.Models
 {
     public class RegisterModel
     {
-        public int UserID{ get; set; }
+        public int UserID { get; set; }
 
         [Required]
         [Display(Name = "Username")]
@@ -55,4 +55,9 @@ namespace SEImplementation.Models
         [DataType(DataType.Password)]
         public string password { get; set; }
     }
+
+
+
+
+
 }
