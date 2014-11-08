@@ -13,6 +13,12 @@ namespace DataAccess.Repos
         {
         }
 
+        public void CreateRole(Role entry)
+        {
+            Entity.AddToRoles(entry);
+            Entity.SaveChanges();
+        }
+
         public IEnumerable<Role> GetRoles()
         {
             return Entity.Roles;

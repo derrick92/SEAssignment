@@ -107,5 +107,53 @@ namespace SEImplementation.Controllers
             }
         }
 
+
+        public ActionResult RoleList()
+        {
+            List<Role> allRoles = new RoleBL().GetAllRoles().ToList();
+
+            RoleModel rModel = new RoleModel();
+            List<RoleModel> rModelList = new List<RoleModel>();
+
+            foreach (Role r in allRoles)
+            {
+                rModel.RoleName = r.RoleName;
+                rModel.RoleID = r.RoleID;
+                rModel.RoleDesc = r.RoleDesc;
+
+                rModelList.Add(rModel);
+                rModel = new RoleModel();
+            }
+
+            return View(rModelList);
+        }
+
+
+
+        public ActionResult CreateRole()
+        {
+            return View(new RoleModel());
+        }
+
+        [HttpPost]
+        public ActionResult CreateRole(RoleModel rm)
+        {
+            try
+            {
+                Role r = new Role();
+                r.RoleName = rm.RoleName;
+                r.RoleDesc = rm.RoleDesc;
+                new RoleBL().CreateRole(r);
+                return Redirect("/admin/rolelist/?msg=success");
+            }
+            catch
+            {
+                return Redirect("/admin/rolelist/?msg=error");
+            }
+            
+        }
+
+
+
     }
 }

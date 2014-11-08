@@ -66,9 +66,5 @@ namespace SEImplementation.Controllers
             }
             return Redirect("/admin?msg=roleadded");
         }
-
-
-
-
     }
 }

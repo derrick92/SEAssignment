@@ -9,6 +9,11 @@ namespace BusinessLayer
 {
     public class RoleBL
     {
+        public void CreateRole(Role r)
+        {
+            new RoleRepo().CreateRole(r);
+        }
+
 
         public IEnumerable<Role> GetAllRoles()
         {
