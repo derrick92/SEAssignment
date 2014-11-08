@@ -280,3 +280,7 @@ table th {
     background-color: #e8eef4;
     border: solid 1px #e8eef4;
 }
+
+/*-----------------------------------------------------*/
+
+select{min-width: 300px;}

@@ -10,6 +10,11 @@ namespace BusinessLayer
     public class RoleBL
     {
 
+        public IEnumerable<Role> GetAllRoles()
+        {
+            return new RoleRepo().GetRoles();
+        }
+
         public bool IsInRole(int userid, int roleId)
         {
 
@@ -37,6 +42,15 @@ namespace BusinessLayer
             rr.DeallocateUser(u, r);
         }
 
+        public void AllocateRole(int userid, int roleid)
+        {
+            UserRepo ur = new UserRepo();
+            RoleRepo rr = new RoleRepo();
+            ur.Entity = rr.Entity;
+            User u = ur.GetUserByID(userid);
+            Role r = rr.GetRoleById(roleid);
+            rr.AllocateRole(u, r);
+        }
 
 
     }

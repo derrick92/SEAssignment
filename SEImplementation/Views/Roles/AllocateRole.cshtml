@@ -1,0 +1,38 @@
+﻿@model SEImplementation.Models.RoleAllocationModel
+
+@{
+    ViewBag.Title = "AllocateRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AllocateRole</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+        <div class="editor-label">
+        @Html.LabelFor(model => model.UserList)
+    </div>
+        <div class="editor-field">
+         @Html.DropDownListFor(model => model.userID, Model.UserList)
+         </div>
+            <div class="editor-label">
+        @Html.LabelFor(model => model.RoleList)
+    </div>
+    <div class="editor-field">
+     @Html.DropDownListFor(model => model.roleID, Model.RoleList)
+    </div>
+    
+
+        <p>
+            <input type="submit" value="Allocate Role" />
+        </p>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "userlist", "admin")
+</div>
