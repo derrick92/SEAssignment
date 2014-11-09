@@ -11,6 +11,7 @@ namespace SEImplementation.Models
     public class ProductModel
     {
         public int productID { get; set; }
+        public string userName { get; set; }
 
         [Required]
         [Display(Name = "Product name")]
@@ -34,7 +35,7 @@ namespace SEImplementation.Models
 
         [Required]
         [Display(Name = "Seller")]
-        public string CreatedBy { get; set; }
+        public int CreatedBy { get; set; }
 
         [Required]
         [Display(Name = "Added on")]

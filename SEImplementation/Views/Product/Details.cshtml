@@ -1,0 +1,32 @@
+﻿@model SEImplementation.Models.ProductModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Html.DisplayFor(model => model.ProductName)</h2>
+<br />
+<div class="fleft">
+    <img src= "@Url.Content(Model.ProductImage)" style="width:200px; height:285px;" />
+</div>
+<div class="fleft">
+    <div style="width: 890px; overflow: hidden; margin-top: 42px; margin-left: 10px;
+        height: 242px; text-align: justify;">
+        @Html.DisplayFor(model => model.ProductDesc)
+    </div>
+</div>
+<div class="clear">
+</div>
+<div style="margin-left: 210px;">
+    <div class="display-label">
+        Stock : @Html.DisplayFor(model => model.ProductStock)</div>
+    <div class="display-label">
+        Price: @Html.DisplayFor(model => model.ProductPrice)</div>
+    <div class="display-label">
+        Item added by: @Html.DisplayFor(model => model.userName)</div>
+    <div class="display-label">
+        Added on: @Html.DisplayFor(model => model.DateAdded)</div>
+    <div class="display-field">
+    </div>
+</div>

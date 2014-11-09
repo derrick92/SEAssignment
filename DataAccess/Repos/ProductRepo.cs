@@ -20,6 +20,11 @@ namespace DataAccess.Repos
             Entity.SaveChanges();
         }
 
+        public Product GetProductById(int id)
+        {
+            return Entity.Products.SingleOrDefault(u => u.ProductID == id);
+        }
+
         public IEnumerable<Product> GetAllProductsSortByDateTake10()
         {
             return (

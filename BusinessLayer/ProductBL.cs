@@ -14,6 +14,12 @@ namespace BusinessLayer
             new ProductRepo().CreateProduct(p);
         }
 
+        public Product GetProductById(int id)
+        {
+            return new ProductRepo().GetProductById(id);
+        }
+
+
         public IEnumerable<Product> RecentProductList()
         {
             return new ProductRepo().GetAllProductsSortByDateTake10();
@@ -23,5 +29,6 @@ namespace BusinessLayer
         {
             return new ProductRepo().GetAllProductsBySortByName();
         }
+
     }
 }

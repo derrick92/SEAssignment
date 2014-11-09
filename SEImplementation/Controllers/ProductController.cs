@@ -74,6 +74,25 @@ namespace SEImplementation.Controllers
             return View(products);
         }
 
+        public ActionResult Details(int prodid)
+        {
+            Product p = new ProductBL().GetProductById(prodid);
+            User u = new UserBL().GetUserByID(p.CreatedBy);
+            ProductModel pm = new ProductModel();
+
+            pm.productID = p.ProductID;
+            pm.ProductName = p.ProductName;
+            pm.ProductStock = p.ProductStock;
+            pm.CreatedBy = p.CreatedBy;
+            pm.DateAdded = p.DateAdded;
+            pm.userName = u.Username;
+            pm.ProductImage = p.ProductImage;
+            pm.ProductDesc = p.ProductDesc;
+            pm.ProductPrice = p.ProductPrice;
+
+            return View(pm);
+        }
+
 
 
     }
