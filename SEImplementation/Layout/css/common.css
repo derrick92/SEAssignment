@@ -55,7 +55,7 @@ body div#mini-menu {
     height: 30px;
     width: 100%;
     color: #696f74;
-    border-bottom:1px solid #15171a;
+    border-bottom: 1px solid #15171a;
 }
 body div#mini-menu div#mini-items {
     width: 1100px;
@@ -122,10 +122,20 @@ body div#recent-products div#recent-added {
     width: 1100px;
 }
 body div#recent-products div#recent-added div.recent-product {
-    width: 210px;
+    width: 208px;
     margin: 5px;
-    height: 285px;
-    background: #000;
+    height: 328px;
+    background: #b2b8bb;
+    border: 1px #b2b8bb solid;
+}
+
+body div#recent-products div#recent-added div.recent-product-name {
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+    height: 32px;
+    width: 195px;
+    color:#2c4451;
 }
 
 
@@ -248,7 +258,7 @@ body div#footer div img:hover {
     margin: 0.5em 0 0 0;
 }
 
-.text-box,input[type=password] {
+.text-box, input[type=password] {
     width: 30em;
 }
 
@@ -283,4 +293,6 @@ table th {
 
 /*-----------------------------------------------------*/
 
-select{min-width: 300px;}
+select {
+    min-width: 300px;
+}

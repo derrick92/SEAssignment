@@ -36,7 +36,7 @@
     <Property Type="String" Name="ProductDesc" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Type="Int32" Name="ProductStock" Nullable="false" />
     <Property Type="String" Name="ProductImage" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Type="Double" Name="ProductPrice" Nullable="false" />
+    <Property Type="Decimal" Name="ProductPrice" Nullable="false" Precision="18" Scale="2" />
     <Property Type="Int32" Name="CreatedBy" Nullable="false" />
     <Property Type="DateTime" Name="DateAdded" Nullable="false" />
     <NavigationProperty Name="User" Relationship="SEshopModel.FK_Products_Users" FromRole="Product" ToRole="User" />
@@ -55,7 +55,7 @@
     <Key>
       <PropertyRef Name="UserID" />
     </Key>
-    <Property Type="Int32" Name="UserID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
     <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="Surname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />

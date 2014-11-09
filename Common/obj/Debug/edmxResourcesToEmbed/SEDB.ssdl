@@ -53,9 +53,9 @@
     <Property Name="ProductDesc" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProductStock" Type="int" Nullable="false" />
     <Property Name="ProductImage" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="ProductPrice" Type="float" Nullable="false" />
+    <Property Name="ProductPrice" Type="decimal" Nullable="false" Scale="2" />
     <Property Name="CreatedBy" Type="int" Nullable="false" />
-    <Property Name="DateAdded" Type="date" Nullable="false" />
+    <Property Name="DateAdded" Type="datetime" Nullable="false" />
   </EntityType>
   <EntityType Name="Roles">
     <Key>
@@ -77,7 +77,7 @@
     <Key>
       <PropertyRef Name="UserID" />
     </Key>
-    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
     <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
     <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
     <Property Name="Surname" Type="nvarchar" Nullable="false" MaxLength="50" />

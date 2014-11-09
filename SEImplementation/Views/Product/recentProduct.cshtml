@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Common.Product>
+@{
+    ViewBag.Title = "recentProduct";
+    Layout = null;
+}
+@foreach (var item in Model)
+{
+    <div class="recent-product fleft">
+        <img src= "@Url.Content(item.ProductImage)" style="width:100%; height:285px;" />
+        <div class="recent-product-name">@Url.Content(item.ProductName)</div> 
+    </div>
+
+}

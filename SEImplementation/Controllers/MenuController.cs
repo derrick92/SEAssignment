@@ -40,7 +40,7 @@ namespace SEImplementation.Controllers
                     return buyer;
                 }
             }
-            //if anoymous
+            //if anoymous or no roles
             else
             {
                 return allUser;

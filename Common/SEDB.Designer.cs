@@ -337,7 +337,7 @@ namespace Common
         /// <param name="productPrice">Initial value of the ProductPrice property.</param>
         /// <param name="createdBy">Initial value of the CreatedBy property.</param>
         /// <param name="dateAdded">Initial value of the DateAdded property.</param>
-        public static Product CreateProduct(global::System.Int32 productID, global::System.String productName, global::System.String productDesc, global::System.Int32 productStock, global::System.String productImage, global::System.Double productPrice, global::System.Int32 createdBy, global::System.DateTime dateAdded)
+        public static Product CreateProduct(global::System.Int32 productID, global::System.String productName, global::System.String productDesc, global::System.Int32 productStock, global::System.String productImage, global::System.Decimal productPrice, global::System.Int32 createdBy, global::System.DateTime dateAdded)
         {
             Product product = new Product();
             product.ProductID = productID;
@@ -483,7 +483,7 @@ namespace Common
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.Double ProductPrice
+        public global::System.Decimal ProductPrice
         {
             get
             {
@@ -498,8 +498,8 @@ namespace Common
                 OnProductPriceChanged();
             }
         }
-        private global::System.Double _ProductPrice;
-        partial void OnProductPriceChanging(global::System.Double value);
+        private global::System.Decimal _ProductPrice;
+        partial void OnProductPriceChanging(global::System.Decimal value);
         partial void OnProductPriceChanged();
     
         /// <summary>

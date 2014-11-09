@@ -57,6 +57,5 @@ namespace BusinessLayer
             rr.AllocateRole(u, r);
         }
 
-
     }
 }
