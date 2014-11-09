@@ -42,5 +42,28 @@ namespace DataAccess.Repos
                 select p
                 ).AsEnumerable();
         }
+
+        public IEnumerable<Product> GetProductsByCreator(int userid)
+        {
+            return (
+                from p in Entity.Products
+                where p.CreatedBy == userid
+                select p
+                ).AsEnumerable();
+        }
+
+        public void UpdateProduct(Product gb)
+        {
+            Entity.Products.Attach(GetProductById(gb.ProductID)); //gets current values
+            Entity.Products.ApplyCurrentValues(gb); //over write with the new values
+            Entity.SaveChanges(); //update the changes
+        }
+
+        public void DeleteProduct(int productid)
+        {
+            Entity.DeleteObject(GetProductById(productid)); //applies the changes
+            Entity.SaveChanges();
+        }
+
     }
 }

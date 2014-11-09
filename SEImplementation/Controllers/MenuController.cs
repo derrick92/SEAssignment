@@ -18,7 +18,7 @@ namespace SEImplementation.Controllers
             string allUser = "<li> <a href=\"/\">Home</a></li>" +
                     "<li> <a href=\"/product\">Browse Items</a></li>";
 
-            string seller = allUser + "<li> <a href=\"/ProductManage\">Product Management</a></li>";
+            string seller = allUser + "<li> <a href=\"/Product/myproducts\">Product Management</a></li>";
             string buyer = allUser + "<li> <a href=\"/becomeseller\">Become a Seller</a></li>";
 
 

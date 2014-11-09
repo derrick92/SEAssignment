@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Common.Product>
+
+@{
+    ViewBag.Title = "My Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Products</h2>
+
+<p>
+    @Html.ActionLink("Create a New Product", "addproduct")
+</p>
+<br />
+@if (!Model.Any())
+{
+    @Html.Raw("<h3>No products found</h3>");
+}
+else
+{ @Html.Raw("<table><tr><th>ProductName</th><th>ProductDesc</th><th>ProductStock</th><th>ProductImage</th><th>ProductPrice</th><th>DateAdded</th><th></th></tr>") 
+    foreach (var item in Model)
+    {
+    
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductStock)
+        </td>
+        <td>
+            <img src= "@Url.Content(item.ProductImage)" style="width:200px; height:285px;" />
+        </td>
+        <td>
+           &euro; @Html.DisplayFor(modelItem => item.ProductPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateAdded)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { prodid = item.ProductID }) |
+            @Html.ActionLink("Delete", "Delete", new { prodid = item.ProductID })
+        </td>
+    </tr>
+    }
+
+@Html.Raw("</table>");
+    
+}
+
+

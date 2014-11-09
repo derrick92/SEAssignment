@@ -30,5 +30,23 @@ namespace BusinessLayer
             return new ProductRepo().GetAllProductsBySortByName();
         }
 
+
+        public IEnumerable<Product> GetProductsByCreator(int userid)
+        {
+            return new ProductRepo().GetProductsByCreator(userid);
+        }
+
+
+        public void DeleteProduct(int productid)
+        {
+            new ProductRepo().DeleteProduct(productid);
+        }
+
+        public void Update(Product gb)
+        {
+            new ProductRepo().UpdateProduct(gb);
+        }
+
+
     }
 }

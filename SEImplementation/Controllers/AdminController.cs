@@ -33,7 +33,8 @@ namespace SEImplementation.Controllers
         {
             if (User.Identity.Name != string.Empty)
             {
-                if (new RoleChecker().checkIfAdmin(User.Identity.Name)){
+                if (new RoleChecker().checkIfAdmin(User.Identity.Name))
+                {
                     List<User> users = new UserBL().GetAllUsers().ToList();
                     return View("userlist", users);
                 }
@@ -150,7 +151,34 @@ namespace SEImplementation.Controllers
             {
                 return Redirect("/admin/rolelist/?msg=error");
             }
-            
+
+        }
+
+
+        public ActionResult ProductList()
+        {
+            List<Product> pList = new ProductBL().AllProducts().ToList();
+            List<ProductModel> pmList = new List<ProductModel>();
+
+            foreach (Product p in pList)
+            {
+                ProductModel pm = new ProductModel();
+                User u = new UserBL().GetUserByID(p.CreatedBy);
+                pm.productID = p.ProductID;
+                pm.ProductName = p.ProductName;
+                pm.ProductStock = p.ProductStock;
+                pm.CreatedBy = p.CreatedBy;
+                pm.DateAdded = p.DateAdded;
+                pm.userName = u.Username;
+                pm.ProductImage = p.ProductImage;
+                pm.ProductDesc = p.ProductDesc;
+                pm.ProductPrice = p.ProductPrice;
+                pmList.Add(pm);
+
+            }
+
+
+            return View(pmList);
         }
 
 

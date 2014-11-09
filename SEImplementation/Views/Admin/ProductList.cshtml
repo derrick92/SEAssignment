@@ -1,0 +1,76 @@
+﻿@model IEnumerable<SEImplementation.Models.ProductModel>
+
+@{
+    ViewBag.Title = "All Product List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Manage Product</h2>
+
+<br />
+<table>
+    <tr>
+        <th>
+            Product ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Stock
+        </th>
+        <th>
+            Image
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Owned By
+        </th>
+        <th>
+            Added on
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+        string x = item.productID.ToString();
+            
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.productID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductStock)
+        </td>
+        <td>
+            <img src= "@Url.Content(item.ProductImage)" style="width:200px; height:285px;" />
+        </td>
+        <td>
+            &euro;@Html.DisplayFor(modelItem => item.ProductPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateAdded)
+        </td>
+        <td>
+            <a href="/product/edit?prodid=@Url.Content(x)">Edit</a> @Html.Raw("|")
+            <a href="/product/delete?prodid=@Url.Content(x)">Delete</a>
+        </td>
+    </tr>
+}
+
+</table>

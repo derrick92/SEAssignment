@@ -296,3 +296,9 @@ table th {
 select {
     min-width: 300px;
 }
+
+textarea{
+margin: 0px;
+width: 691px;
+height: 173px;
+}
