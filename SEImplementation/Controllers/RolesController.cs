@@ -66,5 +66,33 @@ namespace SEImplementation.Controllers
             }
             return Redirect("/admin?msg=roleadded");
         }
+
+        public ActionResult AllocatePermission()
+        {
+            return View(new RoleAllocationModel());
+        }
+
+
+        [HttpPost]
+        public ActionResult AllocatePermission(RoleAllocationModel rm)
+        {
+            int roleid = rm.roleID;
+            int permissionid = rm.permissionID;
+            try
+            {
+                new RoleBL().AllocatePermission(permissionid, roleid);
+            }
+            catch
+            {
+                return Redirect("/admin?msg=permissionalreadyallocatedwithuser");
+            }
+            return Redirect("/admin?msg=permissionadded");
+        }
+
+
+
+
+
+
     }
 }

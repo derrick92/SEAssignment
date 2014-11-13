@@ -13,7 +13,7 @@ namespace DataAccess.Repos
         {
         }
 
-        public IEnumerable<Permission> GetRoles()
+        public IEnumerable<Permission> GetPermissions()
         {
             return Entity.Permissions;
         }

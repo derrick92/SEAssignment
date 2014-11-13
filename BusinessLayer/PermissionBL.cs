@@ -10,6 +10,13 @@ namespace BusinessLayer
     public class PermissionBL
     {
 
+        public IEnumerable<Permission> GetAllPermissions()
+        {
+            return new PermissionRepo().GetPermissions();
+        }
+
+
+
         public bool IsInPermission(int permissionId, int roleId)
         {
 

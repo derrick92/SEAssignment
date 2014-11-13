@@ -58,18 +58,15 @@ namespace SEImplementation.Controllers
                 try
                 {
                     string password = FormsAuthentication.HashPasswordForStoringInConfigFile(lm.password, "MD5");
-
                     if (new UserBL().isAuthenticated(lm.username, password))
                     {
                         FormsAuthentication.RedirectFromLoginPage(lm.username, true);
                         return RedirectToAction("Index", "Home");
-                        
                     }
                     else
                     {
                         return View();
                     }
-
                 }
                 catch
                 {

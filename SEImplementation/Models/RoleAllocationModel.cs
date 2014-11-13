@@ -13,7 +13,10 @@ namespace SEImplementation.Models
     {
         public int userID { get; set; }
         public int roleID { get; set; }
-        
+        public int permissionID { get; set; }
+
+
+
         public IEnumerable<SelectListItem> RoleList
         {
             get { return new SelectList(new RoleBL().GetAllRoles(), "RoleID", "RoleName"); }
@@ -23,5 +26,12 @@ namespace SEImplementation.Models
         {
             get { return new SelectList(new UserBL().GetAllUsers(), "UserID", "Username"); }
         }
+
+        public IEnumerable<SelectListItem> PermissionList
+        {
+            get { return new SelectList(new PermissionBL().GetAllPermissions(), "PermissionID", "PermissionName"); }
+        }
+
+
     }
 }

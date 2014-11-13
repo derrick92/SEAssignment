@@ -33,7 +33,7 @@ namespace SEImplementation.Controllers
         {
             try
             {
-                string dbPath = "";
+                string dbPath = "~/Layout/productimgs/noImg.jpg";
                 var r = new Random();
                 string random = r.Next(1000000, 9000000).ToString();
 

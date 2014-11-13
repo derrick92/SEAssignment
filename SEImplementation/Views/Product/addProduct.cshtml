@@ -7,6 +7,17 @@
     Add a new Product</h2>
 <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
 <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+    <script>
+        $("form").on("submit", function () {
+            var $file = $(this).find("input[type=file]");
+            if (!$file.val() || $file.val() == "") {
+                alert("File is missing");
+                return false;
+            }
+        });
+    </script>
+
 @using (Html.BeginForm("addProduct", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.ValidationSummary(true)
@@ -49,7 +60,7 @@
     <div class="editor-field">
         <input type="file" name="file" id="file" />
     </div>
-    
+
     <p>
         <input type="submit" value="Create Product" />
     </p>

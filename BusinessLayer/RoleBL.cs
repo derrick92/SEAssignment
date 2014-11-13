@@ -57,5 +57,18 @@ namespace BusinessLayer
             rr.AllocateRole(u, r);
         }
 
+        public void AllocatePermission(int permissionid, int roleid)
+        {
+            RoleRepo role = new RoleRepo();
+            PermissionRepo permission = new PermissionRepo();
+            role.Entity = permission.Entity;
+
+
+            Role r = role.GetRoleById(roleid);
+            Permission p = permission.GetPermissionById(permissionid);
+
+            permission.AllocatePermission(p, r);
+        }
+
     }
 }

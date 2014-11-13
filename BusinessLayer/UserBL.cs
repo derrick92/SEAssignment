@@ -35,6 +35,13 @@ namespace BusinessLayer
         {
             List<Role> rlist = new RoleRepo().GetRoles().ToList();
 
+            List<Product> plist = new ProductRepo().GetProductsByCreator(id).ToList();
+
+            foreach (Product zp in plist)
+            {
+                new ProductRepo().DeleteProduct(zp.ProductID);
+            }
+
             foreach (Role zr in rlist)
             {
                 if (new RoleRepo().IsInRole(new UserRepo().GetUserByID(id), zr))
