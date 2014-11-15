@@ -41,7 +41,7 @@
                 @if (item.RoleID != 1 && item.RoleID != 2 && item.RoleID != 4)
                 {
                     @Html.Raw("|")
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("Delete", "DeleteRole", new { roleid = item.RoleID })
                 
                 }
             </td>

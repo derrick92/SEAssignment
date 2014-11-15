@@ -24,6 +24,12 @@ namespace DataAccess.Repos
             return Entity.Roles;
         }
 
+        public void DeleteRole(int roleid)
+        {
+            Entity.DeleteObject(GetRoleById(roleid)); //applies the changes
+            Entity.SaveChanges();
+        }
+
         public void UpdateRole(Role gb)
         {
             Entity.Roles.Attach(GetRoleById(gb.RoleID)); //gets current values

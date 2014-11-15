@@ -79,5 +79,29 @@ namespace BusinessLayer
             permission.AllocatePermission(p, r);
         }
 
+
+        public void dropRoleandPermissionsAllocated(int id)
+        {
+            Role r = new RoleRepo().GetRoleById(id);
+            List<Permission> plist = new PermissionRepo().GetRolePermissions(r).ToList();
+
+            foreach (Permission zr in plist)
+            {
+                if (new PermissionRepo().IsInPermission(zr,r))
+                {
+                    PermissionRepo pr = new PermissionRepo();
+                    RoleRepo rr = new RoleRepo();
+
+                    pr.Entity = rr.Entity;
+
+                    Permission p = pr.GetPermissionById(zr.PermissionID);
+                    Role rol = rr.GetRoleById(id);
+                    pr.DeallocatePermission(p, rol);
+                }
+            }
+
+            new RoleRepo().DeleteRole(id);
+        }
+
     }
 }

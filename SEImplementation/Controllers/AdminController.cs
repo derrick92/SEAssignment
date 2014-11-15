@@ -218,5 +218,17 @@ namespace SEImplementation.Controllers
 
 
 
+        public ActionResult DeleteRole(int roleid)
+        {
+            try
+            {
+                new RoleBL().dropRoleandPermissionsAllocated(roleid);
+                return Redirect("/admin/rolelist?msg=removedsuccessfully");
+            }
+            catch
+            {
+                return Redirect("/admin/rolelist?msg=error");
+            }
+        }
     }
 }
