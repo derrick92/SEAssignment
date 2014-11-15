@@ -28,5 +28,10 @@ namespace BusinessLayer
                 pr.GetPermissionById(permissionId),
                 rr.GetRoleById(roleId));
         }
+
+        public IEnumerable<Permission> GetRolePermissions(Role r)
+        {
+            return new PermissionRepo().GetRolePermissions(r);
+        }
     }
 }

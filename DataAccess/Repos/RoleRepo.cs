@@ -24,6 +24,13 @@ namespace DataAccess.Repos
             return Entity.Roles;
         }
 
+        public void UpdateRole(Role gb)
+        {
+            Entity.Roles.Attach(GetRoleById(gb.RoleID)); //gets current values
+            Entity.Roles.ApplyCurrentValues(gb); //over write with the new values
+            Entity.SaveChanges(); //update the changes
+        }
+
 
         public IEnumerable<Role> GetUserRoles(User u)
         {

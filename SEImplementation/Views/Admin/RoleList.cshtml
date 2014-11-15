@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.RoleDesc)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "EditRole", new { roleid = item.RoleID })
                 @if (item.RoleID != 1 && item.RoleID != 2 && item.RoleID != 4)
                 {
                     @Html.Raw("|")

@@ -1,0 +1,44 @@
+﻿@model SEImplementation.Models.RoleModel
+
+@{
+    ViewBag.Title = "Edit Role";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit Role</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+        <div class="editor-field">
+            @Html.HiddenFor(model => model.RoleID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RoleName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RoleName)
+            @Html.ValidationMessageFor(model => model.RoleName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RoleDesc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RoleDesc)
+            @Html.ValidationMessageFor(model => model.RoleDesc)
+        </div>
+
+        @Html.Action("RolePermissionsList", "Roles")
+    
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -41,5 +41,11 @@ namespace DataAccess.Repos
                 return false;
             else return true;
         }
+
+        public IEnumerable<Permission> GetRolePermissions(Role r)
+        {
+            return r.Permissions;
+        }
+
     }
 }

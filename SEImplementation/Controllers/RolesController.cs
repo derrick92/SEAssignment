@@ -90,7 +90,28 @@ namespace SEImplementation.Controllers
         }
 
 
+        public ActionResult RolePermissionsList(int roleid)
+        {
+            Role r = new RoleBL().GetRoleByID(roleid);
 
+            List<Permission> rolePermissions = new PermissionBL().GetRolePermissions(r).ToList();
+
+            PermissionModel rModel = new PermissionModel();
+            List<PermissionModel> rModelList = new List<PermissionModel>();
+
+            foreach (Permission p in rolePermissions)
+            {
+                rModel.RoleID = roleid;
+                rModel.permissionID = p.PermissionID;
+                rModel.permissionName = p.PermissionName;
+                rModel.permissionDesc = p.PermissionDescription;
+
+                rModelList.Add(rModel);
+                rModel = new PermissionModel();
+            }
+
+            return View(rModelList);
+        }
 
 
 

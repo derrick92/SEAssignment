@@ -1,0 +1,39 @@
+﻿@model IEnumerable<SEImplementation.Models.PermissionModel>
+
+@{
+    ViewBag.Title = "RolePermissionsList";
+    Layout = null;
+}
+
+<p>
+    @Html.ActionLink("Assign a new Permission with role", "AllocatePermission")
+</p>
+<br />
+<div class="fleft">
+@if (!Model.Any())
+{
+    @Html.Raw("<h3>No permissions found</h3>");
+}
+else{ @Html.Raw("<table><tr><th>Permission ID</th><th>Permission Name</th><th>Permission Description</th><th></th></tr>")
+    }
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.permissionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permissionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permissionDesc)
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+
+</table>
+</div>
+<div class="clear"></div>

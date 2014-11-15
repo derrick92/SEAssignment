@@ -155,6 +155,41 @@ namespace SEImplementation.Controllers
         }
 
 
+        public ActionResult EditRole(int roleid)
+        {
+            RoleModel rm = new RoleModel();
+            Role rr = new RoleBL().GetRoleByID(roleid);
+
+            rm.RoleID = rr.RoleID;
+            rm.RoleName = rr.RoleName;
+            rm.RoleDesc = rr.RoleDesc;
+
+
+            return View(rm);
+        }
+
+
+
+        [HttpPost]
+        public ActionResult EditRole(RoleModel rm)
+        {
+            try
+            {
+                Role r = new Role();
+                r.RoleID = rm.RoleID;
+                r.RoleName = rm.RoleName;
+                r.RoleDesc = rm.RoleDesc;
+                new RoleBL().UpdateRole(r);
+                return Redirect("/admin/rolelist/?msg=success");
+            }
+            catch
+            {
+                return Redirect("/admin/rolelist/?msg=error");
+            }
+
+        }
+
+
         public ActionResult ProductList()
         {
             List<Product> pList = new ProductBL().AllProducts().ToList();

@@ -14,6 +14,15 @@ namespace BusinessLayer
             new RoleRepo().CreateRole(r);
         }
 
+        public Role GetRoleByID(int id)
+        {
+            return new RoleRepo().GetRoleById(id);
+        }
+
+        public void UpdateRole(Role gb)
+        {
+            new RoleRepo().UpdateRole(gb);
+        }
 
         public IEnumerable<Role> GetAllRoles()
         {
