@@ -33,5 +33,16 @@ namespace BusinessLayer
         {
             return new PermissionRepo().GetRolePermissions(r);
         }
+
+        public void dropPermission(int permissionid, int roleid)
+        {
+            PermissionRepo pr = new PermissionRepo();
+            RoleRepo rr = new RoleRepo();
+            pr.Entity = rr.Entity;
+
+            Permission p = pr.GetPermissionById(permissionid);
+            Role r = rr.GetRoleById(roleid);
+            pr.DeallocatePermission(p, r);
+        }
     }
 }

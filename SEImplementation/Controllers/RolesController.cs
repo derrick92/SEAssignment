@@ -40,8 +40,15 @@ namespace SEImplementation.Controllers
 
         public ActionResult DeallocateRole(int userid, int roleid)
         {
-            new RoleBL().dropRole(userid, roleid);
-            return Redirect("/admin/userlist?msg=removedsuccessfully");
+            try
+            {
+                new RoleBL().dropRole(userid, roleid);
+                return Redirect("/admin/userlist?msg=removedsuccessfully");
+            }
+            catch
+            {
+                return Redirect("/admin/userlist?msg=error");
+            }
         }
 
 
@@ -112,6 +119,20 @@ namespace SEImplementation.Controllers
 
             return View(rModelList);
         }
+
+        public ActionResult DeallocatePermission(int permissionid, int roleid)
+        {
+            try
+            {
+                new PermissionBL().dropPermission(permissionid, roleid);
+                return Redirect("/admin/rolelist?msg=removedsuccessfully");
+            }
+            catch
+            {
+                return Redirect("/admin/rolelist?msg=error");
+            }
+        }
+
 
 
 

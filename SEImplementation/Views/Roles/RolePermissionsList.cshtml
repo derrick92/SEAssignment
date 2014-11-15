@@ -28,7 +28,7 @@ else{ @Html.Raw("<table><tr><th>Permission ID</th><th>Permission Name</th><th>Pe
             @Html.DisplayFor(modelItem => item.permissionDesc)
         </td>
         <td>
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Delete", "DeallocatePermission", new { roleid = item.RoleID, permissionid = item.permissionID })
         </td>
     </tr>
 }
