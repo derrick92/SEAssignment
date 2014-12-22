@@ -164,6 +164,10 @@
       <Project>{BBEE1785-E30B-43E0-B22F-607B350E3C37}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DesignPattern\DesignPattern.csproj">
+      <Project>{1ACA7DF3-4C40-40A6-8DE7-4F2B1A188991}</Project>
+      <Name>DesignPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Register.cshtml" />

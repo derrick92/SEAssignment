@@ -2,7 +2,7 @@
 using System.Web.Security;
 using Common;
 using BusinessLayer;
-
+using DesignPattern;
 
 namespace SEImplementation.Controllers
 {
@@ -10,6 +10,11 @@ namespace SEImplementation.Controllers
     {
         public ActionResult Index()
         {
+            OrderState OrderState = new OrderState();
+            string x = OrderState.Register();
+            
+            //TODO : ORDER STATE
+            ViewBag.lblOrderState = x;
             ViewBag.Message = "Welcome to ASP.NET MVC!";
 
             return View();

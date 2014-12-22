@@ -40,3 +40,5 @@ E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.T
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.csprojResolveAssemblyReference.cache
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.dll
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\bin\Debug\DesignPattern.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\bin\Debug\DesignPattern.pdb

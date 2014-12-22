@@ -20,4 +20,3 @@ E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\bin\Debug\C
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\bin\Debug\Common.pdb
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\obj\Debug\Common.dll
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\obj\Debug\Common.pdb
-E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

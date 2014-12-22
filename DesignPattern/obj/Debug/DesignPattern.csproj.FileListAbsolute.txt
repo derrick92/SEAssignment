@@ -1,0 +1,4 @@
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DesignPattern\bin\Debug\DesignPattern.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DesignPattern\bin\Debug\DesignPattern.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DesignPattern\obj\Debug\DesignPattern.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DesignPattern\obj\Debug\DesignPattern.pdb

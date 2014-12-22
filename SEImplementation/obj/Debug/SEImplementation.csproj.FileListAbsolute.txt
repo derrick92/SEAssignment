@@ -37,3 +37,5 @@ E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\b
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\obj\Debug\SEImplementation.csprojResolveAssemblyReference.cache
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\obj\Debug\SEImplementation.dll
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\obj\Debug\SEImplementation.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\DesignPattern.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\DesignPattern.pdb
