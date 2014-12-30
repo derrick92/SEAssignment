@@ -1,0 +1,57 @@
+﻿@model SEImplementation.Models.CartModel
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(model => model.myCart.ShoppingCartID)
+
+        <div class="editor-label">
+            @Html.HiddenFor(model => model.myCart.UserID)
+        </div>
+        <div class="editor-field">
+            @Html.HiddenFor(model => model.myCart.UserID)
+            @Html.HiddenFor(model => model.myCart.UserID)
+        </div>
+
+        <div class="editor-label">
+            @Html.HiddenFor(model => model.myCart.ProductID)
+        </div>
+        <div class="editor-field">
+            @Html.HiddenFor(model => model.myCart.ProductID)
+            @Html.HiddenFor(model => model.myCart.ProductID)
+        </div>
+
+
+            <label>Product Name:</label>
+
+            <label><b>
+            @Html.DisplayFor(model => model.myCart.Product.ProductName)</b></label>
+
+            <br /><br />
+    
+        <div class="editor-label">
+            <label>Quantity</label>
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.myCart.Qty, new { @required="required", @type="number" ,@min="1"})
+            @Html.ValidationMessageFor(model => model.myCart.Qty)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+}
+<br />
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Common.ShoppingCart>
+@{
+    ViewBag.Title = "Shopping Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Raw(ViewBag.Message)
+<h2>
+    Shopping Cart</h2>
+@if (!Model.Any())
+{
+    <p>
+        There are no items in your Shopping cart.</p>
+
+}
+else
+{
+    foreach (var item in Model)
+    {
+            
+            
+    <div class="product-item">
+        <div class="prodImageCont">
+            <a href="@Url.Action("Details", "Product", new { id = item.ProductID })">
+                <img src="@Url.Content(item.Product.ProductImage)" class="prodImage"/></a></div>
+        <div class="prodDescCont">
+            <a href="@Url.Action("Details", "Product", new { id = item.Product.ProductID })" style="color:#0032b1; font-size:20px; font-style:normal;">@Html.DisplayFor(modelItem => item.Product.ProductName)
+            </a>
+            <br />
+            <p>
+                Price Per One Item: <b>&euro;@Html.DisplayFor(modelItem => item.Product.ProductPrice)</b><br />
+                Quantity: @Html.DisplayFor(modelItem => item.Qty)<br />
+                Total Price: <b>&euro;@(item.Qty * item.Product.ProductPrice)</b>
+                <br />
+                @Html.ActionLink("Edit Quantity Amount", "Edit", new { cartID = item.ShoppingCartID })
+                <br />
+                @Html.ActionLink("Delete From Cart", "Delete", new { cartID = item.ShoppingCartID })
+            </p>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    
+    <hr style="border-top: 1px solid #ebebeb; border-left: 1px solid #ebebeb; border-right: 1px solid #ebebeb;" />
+    }
+
+
+    decimal totalPrice = 0;
+    foreach (var item in Model)
+    {
+        totalPrice = totalPrice + (item.Qty * item.Product.ProductPrice);
+    }
+        
+
+    <p style="float: left; margin-top: 10px;">
+        The total price is
+        <br />
+        <b>&euro;@Html.Raw(totalPrice.ToString())</b></p>    
+
+    using (Html.BeginForm("Checkout", "Cart"))
+    {  
+    <input type="submit" value="Checkout" style="float: right; margin-top: 20px;" />
+    }
+}

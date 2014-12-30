@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DesignPattern
 {
-    public interface IOrderState
+    public interface IOrder
     {
         string NewOrderPlaced();
         string Register();

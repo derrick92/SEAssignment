@@ -42,9 +42,9 @@
   <ItemGroup>
     <Compile Include="Approved.cs" />
     <Compile Include="Dispatched.cs" />
-    <Compile Include="IOrderState.cs" />
+    <Compile Include="IOrder.cs" />
     <Compile Include="NewOrder.cs" />
-    <Compile Include="OrderState.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registered.cs" />
   </ItemGroup>

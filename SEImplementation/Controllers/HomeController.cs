@@ -10,7 +10,7 @@ namespace SEImplementation.Controllers
     {
         public ActionResult Index()
         {
-            OrderState OrderState = new OrderState();
+            Order OrderState = new Order();
             string x = OrderState.Register();
             
             //TODO : ORDER STATE

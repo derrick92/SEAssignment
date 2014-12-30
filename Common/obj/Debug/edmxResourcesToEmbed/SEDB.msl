@@ -33,6 +33,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ShoppingCarts">
+      <EntityTypeMapping TypeName="SEshopModel.ShoppingCart">
+        <MappingFragment StoreEntitySet="ShoppingCarts">
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="SEshopModel.User">
         <MappingFragment StoreEntitySet="Users">

@@ -5,14 +5,14 @@ using System.Text;
 
 namespace DesignPattern
 {
-    public class Dispatched : IOrderState
+    public class Dispatched : IOrder
     {
-        private readonly OrderState _Parent;
+        private readonly Order _Parent;
         public string NewOrderPlaced()
         {
             throw new Exception("OrderState has already been placed");
         }
-        public Dispatched(OrderState OrderState)
+        public Dispatched(Order OrderState)
         {
             _Parent = OrderState;
             this.Dispatch();

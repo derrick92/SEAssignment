@@ -254,6 +254,19 @@ namespace SEImplementation.Controllers
         }
 
 
+        public ActionResult AddtoCart(string username, int prodID, int qty)
+        {
+            User x = new UserBL().GetUserByUsername(username);
+            ShoppingCart y = new ShoppingCart();
+            y.UserID = x.UserID;
+            y.ProductID = prodID;
+            y.Qty = qty;
+
+            new CartBL().AddToCart(y);
+            return RedirectToAction("Index");
+        }
+
+
 
     }
 }

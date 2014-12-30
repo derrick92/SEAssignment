@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartBL.cs" />
     <Compile Include="PermissionBL.cs" />
     <Compile Include="ProductBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

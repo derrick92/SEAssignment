@@ -5,10 +5,10 @@ using System.Text;
 
 namespace DesignPattern
 {
-    public class OrderState
+    public class Order
     {
-        public IOrderState _CurrentState;
-        public OrderState()
+        public IOrder _CurrentState;
+        public Order()
         {
             _CurrentState = new NewOrder(this);
         }

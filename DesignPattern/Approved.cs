@@ -5,10 +5,10 @@ using System.Text;
 
 namespace DesignPattern
 {
-    public class Approved : IOrderState
+    public class Approved : IOrder
     {
-        private readonly OrderState _Parent;
-        public Approved(OrderState OrderState)
+        private readonly Order _Parent;
+        public Approved(Order OrderState)
         {
             _Parent = OrderState;
             this.Approve();
