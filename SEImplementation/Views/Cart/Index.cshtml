@@ -20,10 +20,10 @@ else
             
     <div class="product-item">
         <div class="prodImageCont">
-            <a href="@Url.Action("Details", "Product", new { id = item.ProductID })">
+            <a href="@Url.Action("Details", "Product", new { prodid = item.ProductID })">
                 <img src="@Url.Content(item.Product.ProductImage)" class="prodImage"/></a></div>
         <div class="prodDescCont">
-            <a href="@Url.Action("Details", "Product", new { id = item.Product.ProductID })" style="color:#0032b1; font-size:20px; font-style:normal;">@Html.DisplayFor(modelItem => item.Product.ProductName)
+            <a href="@Url.Action("Details", "Product", new { prodid = item.Product.ProductID })" style="color:#0032b1; font-size:20px; font-style:normal;">@Html.DisplayFor(modelItem => item.Product.ProductName)
             </a>
             <br />
             <p>

@@ -42,3 +42,5 @@ E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.T
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\obj\Debug\SEImplementation.Tests.pdb
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\bin\Debug\DesignPattern.dll
 E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\bin\Debug\DesignPattern.pdb
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\bin\Debug\DecoratorPattern.dll
+E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\bin\Debug\DecoratorPattern.pdb

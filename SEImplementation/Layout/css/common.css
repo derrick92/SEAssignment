@@ -48,6 +48,7 @@ div#wrapper {
     background: #fff;
     border-bottom: 3px solid #395361;
     padding-bottom: 15px;
+    min-height:861px;
 }
 
 body div#mini-menu {
@@ -301,4 +302,22 @@ textarea{
 margin: 0px;
 width: 691px;
 height: 173px;
+}
+
+
+
+#txtSearch
+{
+background: url(../img/onwhite.png) no-repeat 10px 5px #fcfcfc;
+border: 0 none;
+font: bold 12px Arial,Helvetica,Sans-serif;
+color: #000;
+width: 100px;
+padding: 6px 10px 6px 25px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+outline:none;
+margin-top:4px;
+height:10px;
 }

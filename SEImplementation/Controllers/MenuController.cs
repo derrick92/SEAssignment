@@ -19,7 +19,8 @@ namespace SEImplementation.Controllers
                     "<li> <a href=\"/product\">Browse Items</a></li>";
 
             string seller = allUser + "<li> <a href=\"/Product/myproducts\">Product Management</a></li>";
-            string buyer = allUser + "<li> <a href=\"/becomeseller\">Become a Seller</a></li>";
+            string buyer = allUser + "<li> <a href=\"/becomeseller\">Become a Seller</a></li>"
+            + "<li> <a href=\"/cart\">Shopping Cart</a></li>";
 
 
             //if admin
@@ -27,7 +28,7 @@ namespace SEImplementation.Controllers
             {
                 if (new RoleChecker().checkIfAdmin(User.Identity.Name))
                 {
-                    return seller + "<li> <a href=\"/admin\">Admin Tools</a></li>";
+                    return seller + "<li> <a href=\"/admin\">Admin Tools</a></li>" + "<li> <a href=\"/cart\">Shopping Cart</a></li>";
                 }
                 //else if seller
                 else if (new RoleChecker().checkIfSeller(User.Identity.Name))
