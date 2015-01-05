@@ -66,6 +66,14 @@ namespace DataAccess.Repos
             Entity.SaveChanges(); //update the changes
         }
 
+
+        public void UpdateUserTesting(User gb)
+        {
+       //     Entity.Users.Attach(GetUserByID(gb.UserID)); //gets current values
+            Entity.Users.ApplyCurrentValues(gb); //over write with the new values
+            Entity.SaveChanges(); //update the changes
+        }
+
         public void DeleteUser(int userId)
         {
             Entity.DeleteObject(GetUserByID(userId)); //applies the changes

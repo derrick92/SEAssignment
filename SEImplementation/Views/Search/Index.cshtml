@@ -5,6 +5,13 @@
 
 <h2>Search Results</h2>
 
+@if (!Model.Any())
+{
+    <p>
+        No items are found for the search term.</p>
+
+}
+
 <div id="recent-products">
     <div id="recent-added">
         @foreach (var item in Model)

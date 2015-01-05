@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="639e8cee-b9b1-4f54-b0ee-75f6c446882c" name="WARHAMMER@DERRICK-PC 2015-01-05 01:20:26" runUser="Derrick-PC\WARHAMMER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="ccedb6b9-aaf8-4b58-ba25-38ae9e81d6f6">
+    <Deployment runDeploymentRoot="WARHAMMER_DERRICK-PC 2015-01-05 01_20_26">
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DataAccess\bin\Debug\DataAccess.dll" />
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\bin\Debug\Common.dll" />
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\SEImplementation.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-01-05T01:20:26.3014910+01:00" queuing="2015-01-05T01:20:27.9295866+01:00" start="2015-01-05T01:20:27.9355845+01:00" finish="2015-01-05T01:20:28.3916111+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="5" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateUserTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="bd3ce8e7-67f2-446f-294e-cfb1d255b56d">
+      <Execution id="335182c0-5fdc-4f9d-b137-8b959efe86ea" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.UserRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateUserTest" />
+    </UnitTest>
+    <UnitTest name="DeleteUserTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="325e9a0b-1a8b-0624-c6cc-2e77484e8c7d">
+      <Execution id="f43e73f8-3eba-4cb5-bccb-b59e732771bd" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.UserRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteUserTest" />
+    </UnitTest>
+    <UnitTest name="GetUserByUsernameTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="ec8bbd1b-8ee6-1ff7-1824-c28c2a1d3e20">
+      <Execution id="f9a930fe-7a7c-41fd-a671-566a1a923dcd" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.UserRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetUserByUsernameTest" />
+    </UnitTest>
+    <UnitTest name="Index" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="14a4c32a-bf2f-de71-b2c7-f05eef3ab4e9">
+      <Execution id="0e5a698a-ae85-468e-9bf2-8b9016287253" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.Controllers.HomeControllerTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+    <UnitTest name="GetUserByIDTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="ddf30861-807c-6f7d-5ed9-4f63b3ff6080">
+      <Execution id="1a441e2d-1d1c-41a5-8227-855725b7d77b" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.UserRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetUserByIDTest" />
+    </UnitTest>
+    <UnitTest name="GetAllUsersTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="91c931a0-8e27-b634-f7fd-fc87c453c837">
+      <Execution id="148d6414-7425-47a5-8ca6-a615650fa98f" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.UserRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllUsersTest" />
+    </UnitTest>
+    <UnitTest name="UpdateUserTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="3de2c917-9b55-35e9-85e0-6adb4dc06e84">
+      <Execution id="460b9ea9-ec60-4808-bbd0-75315e1abeec" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.UserRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateUserTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="14a4c32a-bf2f-de71-b2c7-f05eef3ab4e9" executionId="0e5a698a-ae85-468e-9bf2-8b9016287253" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="325e9a0b-1a8b-0624-c6cc-2e77484e8c7d" executionId="f43e73f8-3eba-4cb5-bccb-b59e732771bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3de2c917-9b55-35e9-85e0-6adb4dc06e84" executionId="460b9ea9-ec60-4808-bbd0-75315e1abeec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91c931a0-8e27-b634-f7fd-fc87c453c837" executionId="148d6414-7425-47a5-8ca6-a615650fa98f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd3ce8e7-67f2-446f-294e-cfb1d255b56d" executionId="335182c0-5fdc-4f9d-b137-8b959efe86ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ddf30861-807c-6f7d-5ed9-4f63b3ff6080" executionId="1a441e2d-1d1c-41a5-8227-855725b7d77b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec8bbd1b-8ee6-1ff7-1824-c28c2a1d3e20" executionId="f9a930fe-7a7c-41fd-a671-566a1a923dcd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0e5a698a-ae85-468e-9bf2-8b9016287253" testId="14a4c32a-bf2f-de71-b2c7-f05eef3ab4e9" testName="Index" computerName="DERRICK-PC" duration="00:00:00.0350134" startTime="2015-01-05T01:20:27.9385851+01:00" endTime="2015-01-05T01:20:28.1245954+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e5a698a-ae85-468e-9bf2-8b9016287253">
+    </UnitTestResult>
+    <UnitTestResult executionId="f43e73f8-3eba-4cb5-bccb-b59e732771bd" testId="325e9a0b-1a8b-0624-c6cc-2e77484e8c7d" testName="DeleteUserTest" computerName="DERRICK-PC" duration="00:00:00.1978244" startTime="2015-01-05T01:20:28.1265949+01:00" endTime="2015-01-05T01:20:28.3276074+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f43e73f8-3eba-4cb5-bccb-b59e732771bd">
+    </UnitTestResult>
+    <UnitTestResult executionId="460b9ea9-ec60-4808-bbd0-75315e1abeec" testId="3de2c917-9b55-35e9-85e0-6adb4dc06e84" testName="UpdateUserTest" computerName="DERRICK-PC" duration="00:00:00.0043753" startTime="2015-01-05T01:20:28.3286077+01:00" endTime="2015-01-05T01:20:28.3366079+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="460b9ea9-ec60-4808-bbd0-75315e1abeec">
+    </UnitTestResult>
+    <UnitTestResult executionId="148d6414-7425-47a5-8ca6-a615650fa98f" testId="91c931a0-8e27-b634-f7fd-fc87c453c837" testName="GetAllUsersTest" computerName="DERRICK-PC" duration="00:00:00.0112613" startTime="2015-01-05T01:20:28.3376078+01:00" endTime="2015-01-05T01:20:28.3516086+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="148d6414-7425-47a5-8ca6-a615650fa98f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;System.Data.Objects.ObjectSet`1[Common.User]&gt;. </Message>
+          <StackTrace>   at SEImplementation.Tests.UserRepoTest.GetAllUsersTest() in E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\UserRepoTest.cs:line 93
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="335182c0-5fdc-4f9d-b137-8b959efe86ea" testId="bd3ce8e7-67f2-446f-294e-cfb1d255b56d" testName="CreateUserTest" computerName="DERRICK-PC" duration="00:00:00.0053799" startTime="2015-01-05T01:20:28.3536108+01:00" endTime="2015-01-05T01:20:28.3616094+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="335182c0-5fdc-4f9d-b137-8b959efe86ea">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SEImplementation.Tests.UserRepoTest.CreateUserTest threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: entity</Message>
+          <StackTrace>    at System.Data.Objects.ObjectContext.AddObject(String entitySetName, Object entity)
+   at Common.SEshopEntities.AddToUsers(User user) in E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\SEDB.Designer.cs:line 199
+   at DataAccess.Repos.UserRepo.CreateUser(User entry) in E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DataAccess\Repos\UserRepo.cs:line 19
+   at SEImplementation.Tests.UserRepoTest.CreateUserTest() in E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation.Tests\UserRepoTest.cs:line 183
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1a441e2d-1d1c-41a5-8227-855725b7d77b" testId="ddf30861-807c-6f7d-5ed9-4f63b3ff6080" testName="GetUserByIDTest" computerName="DERRICK-PC" duration="00:00:00.0038841" startTime="2015-01-05T01:20:28.3636093+01:00" endTime="2015-01-05T01:20:28.3696130+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a441e2d-1d1c-41a5-8227-855725b7d77b">
+    </UnitTestResult>
+    <UnitTestResult executionId="f9a930fe-7a7c-41fd-a671-566a1a923dcd" testId="ec8bbd1b-8ee6-1ff7-1824-c28c2a1d3e20" testName="GetUserByUsernameTest" computerName="DERRICK-PC" duration="00:00:00.0051025" startTime="2015-01-05T01:20:28.3716098+01:00" endTime="2015-01-05T01:20:28.3796107+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9a930fe-7a7c-41fd-a671-566a1a923dcd">
+    </UnitTestResult>
+  </Results>
+</TestRun>

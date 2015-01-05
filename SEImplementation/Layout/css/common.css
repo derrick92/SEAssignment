@@ -130,6 +130,13 @@ body div#recent-products div#recent-added div.recent-product {
     border: 1px #b2b8bb solid;
 }
 
+body div#recent-products div#recent-added div.recent-product:hover {
+    border: 1px #DF6D23 solid;
+    background: #DF6D23;
+    }
+
+
+
 body div#recent-products div#recent-added div.recent-product-name {
     text-align: center;
     font-size: 13px;

@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Common;
 using System.Collections.Generic;
-
+using DataAccess.Repos;
 namespace SEImplementation.Tests
 {
     
@@ -15,6 +15,20 @@ namespace SEImplementation.Tests
     [TestClass()]
     public class UserRepoTest
     {
+        public User generateUser(UserRepo target)
+        {
+            User actual = new User();
+            actual.Username = "unitTestingUsername";
+            actual.Password = "unitTestingPassword";
+            actual.FirstName = "unitTestingFirstName";
+            actual.Surname = "unitTestingSurname";
+            actual.Email = "unitTestingEmail";
+            actual.MobileNum = 122;
+
+            target.CreateUser(actual);
+
+            return actual;
+        }
 
 
         private TestContext testContextInstance;
@@ -73,11 +87,9 @@ namespace SEImplementation.Tests
         public void GetAllUsersTest()
         {
             UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
-            IEnumerable<User> expected = null; // TODO: Initialize to an appropriate value
             IEnumerable<User> actual;
             actual = target.GetAllUsers();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.IsNotNull(actual);
         }
 
         /// <summary>
@@ -87,12 +99,15 @@ namespace SEImplementation.Tests
         public void GetUserByIDTest()
         {
             UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
-            int id = 0; // TODO: Initialize to an appropriate value
-            User expected = null; // TODO: Initialize to an appropriate value
+
+            User u = generateUser(target);
+
+            int userID = u.UserID; // TODO: Initialize to an appropriate value
+            User expected = u; // TODO: Initialize to an appropriate value
             User actual;
-            actual = target.GetUserByID(id);
+            actual = target.GetUserByID(userID);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            target.DeleteUser(actual.UserID);//Deletes
         }
 
         /// <summary>
@@ -102,13 +117,20 @@ namespace SEImplementation.Tests
         public void GetUserByUsernameTest()
         {
             UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
-            string username = string.Empty; // TODO: Initialize to an appropriate value
-            User expected = null; // TODO: Initialize to an appropriate value
+
+            User u = generateUser(target);
+
+            string userName = u.Username; // TODO: Initialize to an appropriate value
+            User expected = u; // TODO: Initialize to an appropriate value
             User actual;
-            actual = target.GetUserByUsername(username);
+            actual = target.GetUserByUsername(userName);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            target.DeleteUser(actual.UserID);//Deletes
         }
+
+
+
+
 
         /// <summary>
         ///A test for UpdateUser
@@ -117,9 +139,19 @@ namespace SEImplementation.Tests
         public void UpdateUserTest()
         {
             UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
-            User gb = null; // TODO: Initialize to an appropriate value
-            target.UpdateUser(gb);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            User actual = generateUser(target);
+
+            //Created Exoected Local user
+            User expected = new User();
+            expected = actual;
+            expected.Username = "Hello";
+
+            //Updates the user inside the database
+            actual.FirstName = "Hello";
+            target.UpdateUserTesting(actual);
+
+            Assert.AreEqual(expected, actual); //Compares
+            target.DeleteUser(actual.UserID);//Deletes
         }
 
         /// <summary>
@@ -128,10 +160,14 @@ namespace SEImplementation.Tests
         [TestMethod()]
         public void DeleteUserTest()
         {
+
             UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
-            int userId = 0; // TODO: Initialize to an appropriate value
+            IEnumerable<User> expectedUserList = target.GetAllUsers();
+            User u = generateUser(target);
+            int userId = u.UserID; // TODO: Initialize to an appropriate value
             target.DeleteUser(userId);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            IEnumerable<User> actualUserList = target.GetAllUsers();
+            Assert.AreEqual(expectedUserList, actualUserList);
         }
 
         /// <summary>
@@ -141,9 +177,27 @@ namespace SEImplementation.Tests
         public void CreateUserTest()
         {
             UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
-            User entry = null; // TODO: Initialize to an appropriate value
-            target.CreateUser(entry);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            User u = generateUser(target);
+            bool found = false;
+            try
+            {
+                User x = target.GetUserByID(u.UserID);
+                if (x != null)
+                {
+                    found = true;
+                }
+            }
+            catch (Exception)
+            {
+
+                found = false;
+            }
+            finally
+            {
+                Assert.IsTrue(found);
+            }
+
+            target.DeleteUser(u.UserID);
         }
     }
 }

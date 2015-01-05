@@ -23,7 +23,7 @@ namespace SEImplementation.Controllers
             foreach (ShoppingCart cx in c)
             {
                 p = new ProductBL().GetProductById(cx.ProductID);
-                itemName = itemName + "&cmd=_cart&business=derrickagius92@gmail.com&currency_code=EUR" + "&item_name=" + p.ProductName + "&amount=" + p.ProductPrice + "&add=1" + "&shipping=150" + "&item_number=" + p.ProductID + "&quantity=" + cx.Qty; 
+                itemName = itemName + "&cmd=_cart&business=derrickagius92@gmail.com&currency_code=EUR" + "&item_name=" + p.ProductName + "&amount=" + p.ProductPrice + "&add=1" + "&item_number=" + p.ProductID + "&quantity=" + cx.Qty; 
                 new CartBL().DeleteCartItem(cx.ShoppingCartID);
             }
             string fullURL = urlRedirect + itemName;
