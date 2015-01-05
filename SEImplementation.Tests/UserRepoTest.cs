@@ -144,14 +144,15 @@ namespace SEImplementation.Tests
             //Created Exoected Local user
             User expected = new User();
             expected = actual;
-            expected.Username = "Hello";
+            expected.FirstName = "FirstNameChange";
 
             //Updates the user inside the database
-            actual.FirstName = "Hello";
+            actual.FirstName = "FirstNameChange";
             target.UpdateUserTesting(actual);
+            User uActual = target.GetUserByID(actual.UserID);
 
-            Assert.AreEqual(expected, actual); //Compares
-            target.DeleteUser(actual.UserID);//Deletes
+            Assert.AreEqual(expected, uActual); //Compares
+            target.DeleteUser(uActual.UserID);//Deletes
         }
 
         /// <summary>
