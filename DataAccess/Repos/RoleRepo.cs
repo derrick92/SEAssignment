@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Common;
+using System.Text.RegularExpressions;
+using Common.CustomExceptions;
 
 namespace DataAccess.Repos
 {
@@ -15,6 +17,26 @@ namespace DataAccess.Repos
 
         public void CreateRole(Role entry)
         {
+            if (entry.RoleName == "")
+            {
+                throw new NullValueException();
+            }
+
+            if (!Regex.IsMatch(entry.RoleName, @"^[a-zA-Z]+$"))
+            {
+                throw new NoNumberAndSymbolsAllowedException();
+            }
+
+            if (!Regex.IsMatch(entry.RoleDesc, @"^[a-zA-Z]+$"))
+            {
+                throw new NoNumberAndSymbolsAllowedException();
+            }
+
+            if (Entity.Roles.Count(role => role.RoleName.ToLower() == entry.RoleName.ToLower()) >= 1)
+            {
+                throw new ValueAlreadyExistsException();
+            }
+
             Entity.AddToRoles(entry);
             Entity.SaveChanges();
         }
@@ -26,12 +48,32 @@ namespace DataAccess.Repos
 
         public void DeleteRole(int roleid)
         {
+            if (Entity.Roles.Count(role => role.RoleID == roleid) == 0)
+            {
+                throw new ValueDoesNotExistExeception();
+            }
             Entity.DeleteObject(GetRoleById(roleid)); //applies the changes
             Entity.SaveChanges();
         }
 
         public void UpdateRole(Role gb)
         {
+            if (gb.RoleName == "")
+            {
+                throw new NullValueException();
+            }
+
+            if (!Regex.IsMatch(gb.RoleName, @"^[a-zA-Z]+$"))
+            {
+                throw new NoNumberAndSymbolsAllowedException();
+            }
+
+            if (!Regex.IsMatch(gb.RoleDesc, @"^[a-zA-Z]+$"))
+            {
+                throw new NoNumberAndSymbolsAllowedException();
+            }
+
+
             Entity.Roles.Attach(GetRoleById(gb.RoleID)); //gets current values
             Entity.Roles.ApplyCurrentValues(gb); //over write with the new values
             Entity.SaveChanges(); //update the changes

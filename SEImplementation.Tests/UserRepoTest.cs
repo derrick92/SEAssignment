@@ -86,7 +86,7 @@ namespace SEImplementation.Tests
         [TestMethod()]
         public void GetAllUsersTest()
         {
-            UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
+            UserRepo target = new UserRepo();
             IEnumerable<User> actual;
             actual = target.GetAllUsers();
             Assert.IsNotNull(actual);
@@ -98,12 +98,12 @@ namespace SEImplementation.Tests
         [TestMethod()]
         public void GetUserByIDTest()
         {
-            UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
+            UserRepo target = new UserRepo();
 
             User u = generateUser(target);
 
-            int userID = u.UserID; // TODO: Initialize to an appropriate value
-            User expected = u; // TODO: Initialize to an appropriate value
+            int userID = u.UserID; 
+            User expected = u; 
             User actual;
             actual = target.GetUserByID(userID);
             Assert.AreEqual(expected, actual);
@@ -116,12 +116,12 @@ namespace SEImplementation.Tests
         [TestMethod()]
         public void GetUserByUsernameTest()
         {
-            UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
+            UserRepo target = new UserRepo(); 
 
             User u = generateUser(target);
 
-            string userName = u.Username; // TODO: Initialize to an appropriate value
-            User expected = u; // TODO: Initialize to an appropriate value
+            string userName = u.Username; 
+            User expected = u; 
             User actual;
             actual = target.GetUserByUsername(userName);
             Assert.AreEqual(expected, actual);
@@ -138,7 +138,7 @@ namespace SEImplementation.Tests
         [TestMethod()]
         public void UpdateUserTest()
         {
-            UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
+            UserRepo target = new UserRepo();
             User actual = generateUser(target);
 
             //Created Exoected Local user
@@ -162,10 +162,10 @@ namespace SEImplementation.Tests
         public void DeleteUserTest()
         {
 
-            UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
+            UserRepo target = new UserRepo();
             IEnumerable<User> expectedUserList = target.GetAllUsers();
             User u = generateUser(target);
-            int userId = u.UserID; // TODO: Initialize to an appropriate value
+            int userId = u.UserID;
             target.DeleteUser(userId);
             IEnumerable<User> actualUserList = target.GetAllUsers();
             Assert.AreEqual(expectedUserList, actualUserList);
@@ -177,7 +177,7 @@ namespace SEImplementation.Tests
         [TestMethod()]
         public void CreateUserTest()
         {
-            UserRepo target = new UserRepo(); // TODO: Initialize to an appropriate value
+            UserRepo target = new UserRepo(); 
             User u = generateUser(target);
             bool found = false;
             try
