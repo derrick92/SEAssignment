@@ -27,7 +27,7 @@ namespace DataAccess.Repos
                 throw new NoNumberAndSymbolsAllowedException();
             }
 
-            if (!Regex.IsMatch(entry.RoleDesc, @"^[a-zA-Z]+$"))
+            if (!Regex.IsMatch(entry.RoleDesc, @"^[A-Za-z ]+$"))
             {
                 throw new NoNumberAndSymbolsAllowedException();
             }
@@ -37,9 +37,30 @@ namespace DataAccess.Repos
                 throw new ValueAlreadyExistsException();
             }
 
+            if (entry.RoleName.Length >= 50)
+            {
+                throw new ExceedCharacterLimitExecption();
+            }
+
+            if (entry.RoleDesc.Length >= 50)
+            {
+                throw new ExceedCharacterLimitExecption();
+            }
+
+            if (entry.RoleName.Length <= 3)
+            {
+                throw new BeneathLimitAcceptedException();
+            }
+
+            if (entry.RoleDesc.Length <= 3)
+            {
+                throw new BeneathLimitAcceptedException();
+            }
+
             Entity.AddToRoles(entry);
             Entity.SaveChanges();
         }
+
 
         public IEnumerable<Role> GetRoles()
         {
@@ -71,6 +92,26 @@ namespace DataAccess.Repos
             if (!Regex.IsMatch(gb.RoleDesc, @"^[a-zA-Z]+$"))
             {
                 throw new NoNumberAndSymbolsAllowedException();
+            }
+
+            if (gb.RoleName.Length >= 50)
+            {
+                throw new ExceedCharacterLimitExecption();
+            }
+
+            if (gb.RoleDesc.Length >= 50)
+            {
+                throw new ExceedCharacterLimitExecption();
+            }
+
+            if (gb.RoleName.Length <= 3)
+            {
+                throw new BeneathLimitAcceptedException();
+            }
+
+            if (gb.RoleDesc.Length <= 3)
+            {
+                throw new BeneathLimitAcceptedException();
             }
 
 

@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomExceptions\BeneathLimitAcceptedException.cs" />
+    <Compile Include="CustomExceptions\ExceedCharacterLimitExecption.cs" />
     <Compile Include="CustomExceptions\ValueDoesNotExistExeception.cs" />
     <Compile Include="CustomExceptions\NoNumberAndSymbolsAllowedException.cs" />
     <Compile Include="CustomExceptions\NullValueException.cs" />
