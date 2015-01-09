@@ -17,7 +17,12 @@ namespace DataAccess.Repos
 
         public void CreateRole(Role entry)
         {
-            if (entry.RoleName == "")
+            if (entry.RoleName == "" || entry.RoleName == null)
+            {
+                throw new NullValueException();
+            }
+
+            if (entry.RoleDesc == "" || entry.RoleDesc == null)
             {
                 throw new NullValueException();
             }
@@ -79,7 +84,12 @@ namespace DataAccess.Repos
 
         public void UpdateRole(Role gb)
         {
-            if (gb.RoleName == "")
+            if (gb.RoleName == "" || gb.RoleName == null)
+            {
+                throw new NullValueException();
+            }
+
+            if (gb.RoleDesc == "" || gb.RoleDesc == null)
             {
                 throw new NullValueException();
             }

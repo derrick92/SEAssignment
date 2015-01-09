@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Transactions;
+using System.Data;
 
 namespace SEImplementation.Tests
 {
@@ -29,12 +30,14 @@ namespace SEImplementation.Tests
         //registers itself as the current transaction, and you can access it through 
         //the Current property.
         TransactionScope _trans;
+
         [TestInitialize()]
         public void Init()
         {
             rList = entity.Roles.ToList();
             _trans = new TransactionScope();
         }
+
         [TestCleanup()]
         public void Cleanup()
         {
@@ -126,7 +129,7 @@ namespace SEImplementation.Tests
         }
 
         [TestMethod()]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [ExpectedException(typeof(NullValueException))]
         public void CreateRoleEmptyObjectTest()
         {
             RoleRepo target = new RoleRepo();
@@ -165,6 +168,40 @@ namespace SEImplementation.Tests
 
             target.DeleteRole(entry.RoleID);
         }
+
+        [TestMethod()]
+        public void CreateRoleSuccessGetIDNotNullTest()
+        {
+            RoleRepo target = new RoleRepo();
+            Role entry = new Role();
+            entry.RoleName = "TestingName";
+            entry.RoleDesc = "TestingDesc";
+            target.CreateRole(entry);
+
+            string x = entry.RoleID.ToString();
+           
+            Assert.IsNotNull(x);
+
+            target.DeleteRole(entry.RoleID);
+        }
+
+        [TestMethod()]
+        public void CreateRoleSuccessGetIDNotEqualNums()
+        {
+            RoleRepo target = new RoleRepo();
+            Role entry = new Role();
+            entry.RoleName = "TestingName";
+            entry.RoleDesc = "TestingDesc";
+            target.CreateRole(entry);
+
+            int actual = entry.RoleID;
+            int expect = 0;
+
+            Assert.AreNotEqual(expect, actual);
+
+            target.DeleteRole(entry.RoleID);
+        }
+
 
         [TestMethod()]
         public void CreateRoleSuccessEqualListTest()
@@ -285,8 +322,35 @@ namespace SEImplementation.Tests
 
             target.DeleteRole(entry.RoleID);
         }
-        #endregion
 
+        [TestMethod()]
+        [ExpectedException(typeof(ConstraintException))]
+        public void createRoleNullNameTest()
+        {
+            RoleRepo target = new RoleRepo();
+
+            Role entry = new Role();
+            entry.RoleName = null;
+            entry.RoleDesc = "test";
+            target.CreateRole(entry);
+
+            target.DeleteRole(entry.RoleID);
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(ConstraintException))]
+        public void createRoleNullDescTest()
+        {
+            RoleRepo target = new RoleRepo();
+
+            Role entry = new Role();
+            entry.RoleName = "test";
+            entry.RoleDesc = null;
+            target.CreateRole(entry);
+
+            target.DeleteRole(entry.RoleID);
+        }
+        #endregion
         #region Get Role by Id Test Methods
         /// <summary>
         ///A test for GetRoleById
@@ -323,8 +387,6 @@ namespace SEImplementation.Tests
             Assert.IsNull(actual);
         }
         #endregion
-
-
         #region Update Test Methods
 
         [TestMethod()]
@@ -365,6 +427,7 @@ namespace SEImplementation.Tests
             entity.AddToRoles(actual);
             entity.SaveChanges();
         }
+
 
 
         [TestMethod()]
@@ -451,9 +514,70 @@ namespace SEImplementation.Tests
 
         }
 
+
+        [TestMethod()]
+        [ExpectedException(typeof(ConstraintException))]
+        public void UpdateRoleTestNullName()
+        {
+            RoleRepo target = new RoleRepo();
+            Role actual = new Role();
+            actual.RoleName = "roleTest";
+            actual.RoleDesc = "roleDesc";
+
+            entity.AddToRoles(actual);
+            entity.SaveChanges();
+            entity.Connection.Close();
+
+            //Updates the user inside the database
+            actual.RoleName = "xxxx";
+            target.UpdateRole(actual);
+            Role uActual = entity.Roles.SingleOrDefault(x => x.RoleID == actual.RoleID);
+
+            int id = uActual.RoleID;
+            //Created Exoected Local user
+
+            Role expected = new Role();
+            expected.RoleName = null;
+
+            Assert.AreNotEqual(expected.RoleName, uActual.RoleName); //Compares
+            target.DeleteRole(uActual.RoleID);//Deletes
+
+        }
+
+
+        [TestMethod()]
+        [ExpectedException(typeof(ConstraintException))]
+        public void UpdateRoleTestNullDesc()
+        {
+            RoleRepo target = new RoleRepo();
+            Role actual = new Role();
+            actual.RoleName = "roleTest";
+            actual.RoleDesc = "roleDesc";
+
+            entity.AddToRoles(actual);
+            entity.SaveChanges();
+            entity.Connection.Close();
+
+            //Updates the user inside the database
+            actual.RoleName = "xxxx";
+            target.UpdateRole(actual);
+            Role uActual = entity.Roles.SingleOrDefault(x => x.RoleID == actual.RoleID);
+
+            int id = uActual.RoleID;
+            //Created Exoected Local user
+
+            Role expected = new Role();
+            expected.RoleDesc = null;
+
+            Assert.AreNotEqual(expected.RoleName, uActual.RoleName); //Compares
+            target.DeleteRole(uActual.RoleID);//Deletes
+
+        }
+
+
         [TestMethod()]
         [ExpectedException(typeof(NullValueException))]
-        public void UpdateRoleTestNull()
+        public void UpdateRoleTestEmptyName()
         {
             RoleRepo target = new RoleRepo();
             Role actual = new Role();
@@ -466,6 +590,28 @@ namespace SEImplementation.Tests
 
             //Updates the user inside the database
             actual.RoleName = string.Empty;
+            try { target.UpdateRole(actual); }
+            finally
+            {
+                target.DeleteRole(actual.RoleID);
+            }
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(NullValueException))]
+        public void UpdateRoleTestEmptyDesc()
+        {
+            RoleRepo target = new RoleRepo();
+            Role actual = new Role();
+            actual.RoleName = "roleTest";
+            actual.RoleDesc = "roleDesc";
+
+            entity.AddToRoles(actual);
+            entity.SaveChanges();
+            entity.Connection.Close();
+
+            //Updates the user inside the database
+            actual.RoleDesc = string.Empty;
             try { target.UpdateRole(actual); }
             finally
             {
@@ -634,8 +780,6 @@ namespace SEImplementation.Tests
         }
 
         #endregion
-
-
         #region Delete Test Methods
         [TestMethod()]
         public void DeleteRoleSuccessfulTest()
@@ -676,8 +820,6 @@ namespace SEImplementation.Tests
 
         }
         #endregion
-
-
         #region Get Roles (ListValue)
         [TestMethod()]
         public void GetRolesCountTest()
