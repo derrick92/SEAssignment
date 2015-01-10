@@ -62,6 +62,7 @@ namespace DataAccess.Repos
                 throw new BeneathLimitAcceptedException();
             }
 
+            
             Entity.AddToRoles(entry);
             Entity.SaveChanges();
         }
@@ -138,6 +139,11 @@ namespace DataAccess.Repos
 
         public Role GetRoleById(int id)
         {
+            if (Entity.Roles.Count(role => role.RoleID == id) == 0)
+            {
+                throw new ValueDoesNotExistExeception();
+            }
+
             return Entity.Roles.SingleOrDefault(x => x.RoleID == id);
         }
 

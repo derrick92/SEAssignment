@@ -368,6 +368,7 @@ namespace SEImplementation.Tests
         }
 
         [TestMethod()]
+        [ExpectedException(typeof(ValueDoesNotExistExeception))]
         public void GetRoleByIdNotExistentTest()
         {
             RoleRepo target = new RoleRepo();
@@ -378,6 +379,7 @@ namespace SEImplementation.Tests
         }
 
         [TestMethod()]
+        [ExpectedException(typeof(ValueDoesNotExistExeception))]
         public void GetRoleByIdBoundaryNegativeTest()
         {
             RoleRepo target = new RoleRepo();
@@ -529,7 +531,7 @@ namespace SEImplementation.Tests
             entity.Connection.Close();
 
             //Updates the user inside the database
-            actual.RoleName = "xxxx";
+            actual.RoleName = null;
             target.UpdateRole(actual);
             Role uActual = entity.Roles.SingleOrDefault(x => x.RoleID == actual.RoleID);
 
@@ -537,7 +539,7 @@ namespace SEImplementation.Tests
             //Created Exoected Local user
 
             Role expected = new Role();
-            expected.RoleName = null;
+            expected.RoleName = "xxxx";
 
             Assert.AreNotEqual(expected.RoleName, uActual.RoleName); //Compares
             target.DeleteRole(uActual.RoleID);//Deletes
@@ -559,7 +561,7 @@ namespace SEImplementation.Tests
             entity.Connection.Close();
 
             //Updates the user inside the database
-            actual.RoleName = "xxxx";
+            actual.RoleName = null;
             target.UpdateRole(actual);
             Role uActual = entity.Roles.SingleOrDefault(x => x.RoleID == actual.RoleID);
 
@@ -567,7 +569,7 @@ namespace SEImplementation.Tests
             //Created Exoected Local user
 
             Role expected = new Role();
-            expected.RoleDesc = null;
+            expected.RoleDesc =  "xxxx";
 
             Assert.AreNotEqual(expected.RoleName, uActual.RoleName); //Compares
             target.DeleteRole(uActual.RoleID);//Deletes

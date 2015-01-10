@@ -8,7 +8,7 @@ namespace Common.CustomExceptions
     public class ValueDoesNotExistExeception : Exception
     {
         public ValueDoesNotExistExeception()
-            : base("Value Already Exists.")
+            : base("Value does not Exists.")
         {
         }
         public ValueDoesNotExistExeception(string message)
