@@ -16,9 +16,9 @@ namespace SEImplementation.Controllers
 
         public ActionResult Index(string val)
         {
-           // List<object> data = new List<object>() { "key", "123", new object(), 50, "key33", "key3", "key44", "kedy", "keyh", };
             List<Product> data = new ProductBL().AllProducts().ToList();
-            AdvancedSearchDecorator search = new ByKeywordSearch( new ByTypeSearch() { TypeSearch = typeof(Product) }) { Keyword = val };
+            AdvancedSearchDecorator search = 
+                new ByKeywordSearch( new ByTypeSearch() { TypeSearch = typeof(Product) }) { Keyword = val };
             List<Product> result = search.Search(data);
             return View(result);
         }
