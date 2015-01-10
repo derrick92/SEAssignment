@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="138891d9-9c61-4288-8701-14ac42c71561" name="WARHAMMER@DERRICK-PC 2015-01-10 17:08:25" runUser="Derrick-PC\WARHAMMER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="71c9d80c-5b9a-4a6c-9c69-bd420ae2bb46">
+    <Deployment runDeploymentRoot="WARHAMMER_DERRICK-PC 2015-01-10 17_08_25">
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DataAccess\bin\Debug\DataAccess.dll" />
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\bin\Debug\Common.dll" />
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\SEImplementation.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-01-10T17:08:25.2307844+01:00" queuing="2015-01-10T17:08:26.7188698+01:00" start="2015-01-10T17:08:26.7638718+01:00" finish="2015-01-10T17:08:29.1870114+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="41" executed="41" passed="41" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetRoleByIdNotExistentTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="13247df7-3d56-5a96-a517-506237ae74a1">
+      <Execution id="81d01f80-e9cf-40db-8e0c-6f0d4d7b8c06" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetRoleByIdNotExistentTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleSuccessDescAlreadyExistTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="9ea9f69b-2b1d-ee50-651b-164059cc5540">
+      <Execution id="894f2af7-8547-480e-9dce-e640b7fb987e" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleSuccessDescAlreadyExistTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleSuccessNotEqualListTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="9108f78e-1e8e-8ef5-c820-3bb2c6079aad">
+      <Execution id="e4e66e49-effa-472b-ae23-1e486b139691" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleSuccessNotEqualListTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestMatchingDesc" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="34bc5648-43a4-647f-4592-324cb0f819e1">
+      <Execution id="f3591a4a-25d8-4ee6-b299-207a6980ced9" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestMatchingDesc" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestMatching1" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="64ef12f7-ea64-ac8b-d013-f82c0c6d531a">
+      <Execution id="24bc1185-16f2-417e-93ff-646e9acf3687" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestMatching1" />
+    </UnitTest>
+    <UnitTest name="CreateRoleEmptyObjectTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="0266bf01-68a3-4383-bda3-cf5a18d0860f">
+      <Execution id="5047476b-b4a6-416a-82ee-66a3976e000b" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleEmptyObjectTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleSuccessGetIDNotNullTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="d16f0b59-1491-428e-d22d-6bdc11e93b5f">
+      <Execution id="bda05472-7bc9-475b-bf89-c9f066940655" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleSuccessGetIDNotNullTest" />
+    </UnitTest>
+    <UnitTest name="DeleteRoleSuccessfulTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="518e1dc2-ea68-15fc-c2d8-49c27186343b">
+      <Execution id="2cdb4dc0-7142-46f0-98a8-b7b2e53b8db5" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteRoleSuccessfulTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestEmptyDesc" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="5766de9a-8684-e0c6-bc4e-4ffc1fb38afa">
+      <Execution id="aca74b14-20f0-432e-824e-f39081876bc4" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestEmptyDesc" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleFewDescTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="fc65208a-bc6c-c37d-e81b-cbb20529b86b">
+      <Execution id="9a27870b-a061-4006-8765-3a2e918e7f00" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleFewDescTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestMatchingName" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="b7d9f2b4-b6e4-4fa3-8b3e-823a64c3ef77">
+      <Execution id="b5979ac7-494b-48a5-a1c5-f71db1c66af0" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestMatchingName" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleExceedDescTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="290e47ea-0820-016e-53eb-429e262ceaf8">
+      <Execution id="dfe557aa-2860-4df8-a2fb-1b7702bf1d3b" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleExceedDescTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleExceedNull" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="8de55e15-6f0d-51c4-346e-226a8247d21b">
+      <Execution id="cfc06fc1-b8a9-4f46-a0b9-4d634b8e0b00" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleExceedNull" />
+    </UnitTest>
+    <UnitTest name="CreateRoleSuccessGetIDNotEqualNums" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="08443ed7-b999-a5e4-7cad-8a7b4ff651a8">
+      <Execution id="7ac6ef2e-b165-4c28-8305-85c548c81d77" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleSuccessGetIDNotEqualNums" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleExceedNameTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="74afa68e-2526-5c18-ee55-f2bbbbf2410a">
+      <Execution id="f1d38d61-8474-4788-83a8-f18838a26c08" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleExceedNameTest" />
+    </UnitTest>
+    <UnitTest name="createRoleNullNameTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="825e251e-6d29-e1a8-a155-4beac61e1b9d">
+      <Execution id="73bf02c6-3dcf-4425-ad33-2d0647d54be9" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createRoleNullNameTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleTestBeneathCharacterLimitonDesc" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="cfd83b9f-a3ce-c125-f187-fbcac6aad68f">
+      <Execution id="7e172d24-ecf0-439d-bece-7ab0f13592c1" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleTestBeneathCharacterLimitonDesc" />
+    </UnitTest>
+    <UnitTest name="CreateRoleTestNoNumSymbRoleDescTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="991a5087-ea0e-f2a5-a585-3462563b113a">
+      <Execution id="dc550196-7073-40c3-8926-63d476a86995" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleTestNoNumSymbRoleDescTest" />
+    </UnitTest>
+    <UnitTest name="DeleteRoleDoesNotExistTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="b32547ec-a862-3b2b-2e66-bb246f894077">
+      <Execution id="5451f1c0-3df5-4921-acc7-fba064130495" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteRoleDoesNotExistTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleSuccessEqualListTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="842dc3df-3bff-9f2f-394d-17dfb132acc8">
+      <Execution id="89cb72af-ee11-46b1-a942-17b0e21b1f17" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleSuccessEqualListTest" />
+    </UnitTest>
+    <UnitTest name="GetRolesValuesTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="8c5802aa-4574-61c9-1aca-d10adf54732d">
+      <Execution id="04c647fc-f7b6-457f-9503-e580bd962d36" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetRolesValuesTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleEmptyTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="5b505cd0-93f0-1c9c-0d7f-a858e9f6c7c2">
+      <Execution id="3d44ef73-bc34-4e40-b64b-07ce6d21bbee" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleEmptyTest" />
+    </UnitTest>
+    <UnitTest name="GetRolesCountTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="b3b0da28-414b-614a-698b-37506007bccd">
+      <Execution id="0cb2ce9a-716d-42e2-8248-bfec92cbec9b" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetRolesCountTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleTestBeneathCharacterLimitonName" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="2cdc7137-401e-62e3-8dc6-f25ce01a537a">
+      <Execution id="a3751ad0-c9b9-4f6c-8935-30310375894b" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleTestBeneathCharacterLimitonName" />
+    </UnitTest>
+    <UnitTest name="GetRoleByIdBoundaryNegativeTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="b714d5f5-7caf-a6e5-210b-e06fc3334cf1">
+      <Execution id="3dbc78b5-d729-4fe9-bb05-5d62b0c97a08" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetRoleByIdBoundaryNegativeTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleTestNoNumSymbRoleNameTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="5b0200b7-a653-51fa-4b4b-10b30e877396">
+      <Execution id="71c0cbe1-38d5-4b90-b7b1-c149b4612858" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleTestNoNumSymbRoleNameTest" />
+    </UnitTest>
+    <UnitTest name="DeleteRoleNegativeTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="6bdc3103-b673-5cb9-be77-7f4ef84e4995">
+      <Execution id="79d2180f-f452-455f-ae9b-03c32036925c" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteRoleNegativeTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleTestExeedCharacterLimitonName" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="b3422950-13c8-9554-6949-90bd6cdc5364">
+      <Execution id="8d85025e-0350-49f9-a243-c6a492411ea9" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleTestExeedCharacterLimitonName" />
+    </UnitTest>
+    <UnitTest name="createRoleNullDescTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="6b78d26e-4d0b-2d16-f840-efbea43b9f0d">
+      <Execution id="c34e9e91-7170-4910-b94e-a29493da6723" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createRoleNullDescTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestRoleNameBad" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="ba316aa0-52f0-dca8-87b4-1adcbf771adc">
+      <Execution id="31dc2d68-ef35-41a7-955e-9b294356e3b8" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestRoleNameBad" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleFewNameTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="609a6165-6aa3-ec7d-b95f-ef0ceae0efea">
+      <Execution id="fabad48e-2fd0-4850-8d2b-5cc27fafdf08" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleFewNameTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleAlreadyExistTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="5e6b146e-0888-cb7a-088c-ccd669e9fbae">
+      <Execution id="8ea37a02-3de4-4e92-92bc-5ed26d8bafe8" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleAlreadyExistTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestEmptyName" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="48172837-7d7b-06f0-35d6-267216a40b7b">
+      <Execution id="e79996c4-a20a-4ca6-9c25-373ed9a27d80" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestEmptyName" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestNullName" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="b4e9415d-fade-486b-5f96-8d20a5983bca">
+      <Execution id="bf657a95-6ec3-4578-8cf9-1f198fadb80b" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestNullName" />
+    </UnitTest>
+    <UnitTest name="createRoleEmptyTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="c01bcd52-1e48-0139-9b3c-dcb9ac79f4f3">
+      <Execution id="d8123e29-f937-4742-a9fc-64e91d08e294" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createRoleEmptyTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestNullDesc" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="68a1d45e-cede-cf06-68f7-94564fd7feb2">
+      <Execution id="d1500095-d026-46a0-8d8e-4dfd122db0ae" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestNullDesc" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestRoleDescBad" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="63ba7a1c-0a9f-d475-4259-c631099d527c">
+      <Execution id="6b5a4d92-a068-452d-9a53-37385d20c1c7" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestRoleDescBad" />
+    </UnitTest>
+    <UnitTest name="GetRoleByIdExistTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="4c9b7324-36bb-d462-95ec-80b271f6e1db">
+      <Execution id="0119e6f7-622f-4743-8d58-14df732332ad" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetRoleByIdExistTest" />
+    </UnitTest>
+    <UnitTest name="CreateRoleTestExeedCharacterLimitonDesc" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="43e2e513-1209-95e9-89f2-7d77b3822c20">
+      <Execution id="f94354d6-455d-47b9-a173-0d7b9aa97250" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleTestExeedCharacterLimitonDesc" />
+    </UnitTest>
+    <UnitTest name="CreateRoleSuccessEqualValueTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="5ff3e092-e0d6-8efb-0820-a7f9eab6437f">
+      <Execution id="ee075558-0d98-4604-83be-63d05fc9cba3" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleSuccessEqualValueTest" />
+    </UnitTest>
+    <UnitTest name="UpdateRoleTestNotMatching" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="c2929299-8048-8810-66c8-d9708d4d9785">
+      <Execution id="269c80af-45a8-4218-8916-4efbd2e0af79" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateRoleTestNotMatching" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0266bf01-68a3-4383-bda3-cf5a18d0860f" executionId="5047476b-b4a6-416a-82ee-66a3976e000b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08443ed7-b999-a5e4-7cad-8a7b4ff651a8" executionId="7ac6ef2e-b165-4c28-8305-85c548c81d77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13247df7-3d56-5a96-a517-506237ae74a1" executionId="81d01f80-e9cf-40db-8e0c-6f0d4d7b8c06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="290e47ea-0820-016e-53eb-429e262ceaf8" executionId="dfe557aa-2860-4df8-a2fb-1b7702bf1d3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2cdc7137-401e-62e3-8dc6-f25ce01a537a" executionId="a3751ad0-c9b9-4f6c-8935-30310375894b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34bc5648-43a4-647f-4592-324cb0f819e1" executionId="f3591a4a-25d8-4ee6-b299-207a6980ced9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43e2e513-1209-95e9-89f2-7d77b3822c20" executionId="f94354d6-455d-47b9-a173-0d7b9aa97250" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48172837-7d7b-06f0-35d6-267216a40b7b" executionId="e79996c4-a20a-4ca6-9c25-373ed9a27d80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c9b7324-36bb-d462-95ec-80b271f6e1db" executionId="0119e6f7-622f-4743-8d58-14df732332ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="518e1dc2-ea68-15fc-c2d8-49c27186343b" executionId="2cdb4dc0-7142-46f0-98a8-b7b2e53b8db5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5766de9a-8684-e0c6-bc4e-4ffc1fb38afa" executionId="aca74b14-20f0-432e-824e-f39081876bc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b0200b7-a653-51fa-4b4b-10b30e877396" executionId="71c0cbe1-38d5-4b90-b7b1-c149b4612858" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b505cd0-93f0-1c9c-0d7f-a858e9f6c7c2" executionId="3d44ef73-bc34-4e40-b64b-07ce6d21bbee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e6b146e-0888-cb7a-088c-ccd669e9fbae" executionId="8ea37a02-3de4-4e92-92bc-5ed26d8bafe8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ff3e092-e0d6-8efb-0820-a7f9eab6437f" executionId="ee075558-0d98-4604-83be-63d05fc9cba3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="609a6165-6aa3-ec7d-b95f-ef0ceae0efea" executionId="fabad48e-2fd0-4850-8d2b-5cc27fafdf08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63ba7a1c-0a9f-d475-4259-c631099d527c" executionId="6b5a4d92-a068-452d-9a53-37385d20c1c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64ef12f7-ea64-ac8b-d013-f82c0c6d531a" executionId="24bc1185-16f2-417e-93ff-646e9acf3687" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68a1d45e-cede-cf06-68f7-94564fd7feb2" executionId="d1500095-d026-46a0-8d8e-4dfd122db0ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b78d26e-4d0b-2d16-f840-efbea43b9f0d" executionId="c34e9e91-7170-4910-b94e-a29493da6723" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6bdc3103-b673-5cb9-be77-7f4ef84e4995" executionId="79d2180f-f452-455f-ae9b-03c32036925c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74afa68e-2526-5c18-ee55-f2bbbbf2410a" executionId="f1d38d61-8474-4788-83a8-f18838a26c08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="825e251e-6d29-e1a8-a155-4beac61e1b9d" executionId="73bf02c6-3dcf-4425-ad33-2d0647d54be9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="842dc3df-3bff-9f2f-394d-17dfb132acc8" executionId="89cb72af-ee11-46b1-a942-17b0e21b1f17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c5802aa-4574-61c9-1aca-d10adf54732d" executionId="04c647fc-f7b6-457f-9503-e580bd962d36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8de55e15-6f0d-51c4-346e-226a8247d21b" executionId="cfc06fc1-b8a9-4f46-a0b9-4d634b8e0b00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9108f78e-1e8e-8ef5-c820-3bb2c6079aad" executionId="e4e66e49-effa-472b-ae23-1e486b139691" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="991a5087-ea0e-f2a5-a585-3462563b113a" executionId="dc550196-7073-40c3-8926-63d476a86995" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ea9f69b-2b1d-ee50-651b-164059cc5540" executionId="894f2af7-8547-480e-9dce-e640b7fb987e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b32547ec-a862-3b2b-2e66-bb246f894077" executionId="5451f1c0-3df5-4921-acc7-fba064130495" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3422950-13c8-9554-6949-90bd6cdc5364" executionId="8d85025e-0350-49f9-a243-c6a492411ea9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3b0da28-414b-614a-698b-37506007bccd" executionId="0cb2ce9a-716d-42e2-8248-bfec92cbec9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4e9415d-fade-486b-5f96-8d20a5983bca" executionId="bf657a95-6ec3-4578-8cf9-1f198fadb80b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b714d5f5-7caf-a6e5-210b-e06fc3334cf1" executionId="3dbc78b5-d729-4fe9-bb05-5d62b0c97a08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7d9f2b4-b6e4-4fa3-8b3e-823a64c3ef77" executionId="b5979ac7-494b-48a5-a1c5-f71db1c66af0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ba316aa0-52f0-dca8-87b4-1adcbf771adc" executionId="31dc2d68-ef35-41a7-955e-9b294356e3b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c01bcd52-1e48-0139-9b3c-dcb9ac79f4f3" executionId="d8123e29-f937-4742-a9fc-64e91d08e294" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2929299-8048-8810-66c8-d9708d4d9785" executionId="269c80af-45a8-4218-8916-4efbd2e0af79" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfd83b9f-a3ce-c125-f187-fbcac6aad68f" executionId="7e172d24-ecf0-439d-bece-7ab0f13592c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d16f0b59-1491-428e-d22d-6bdc11e93b5f" executionId="bda05472-7bc9-475b-bf89-c9f066940655" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc65208a-bc6c-c37d-e81b-cbb20529b86b" executionId="9a27870b-a061-4006-8765-3a2e918e7f00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5047476b-b4a6-416a-82ee-66a3976e000b" testId="0266bf01-68a3-4383-bda3-cf5a18d0860f" testName="CreateRoleEmptyObjectTest" computerName="DERRICK-PC" duration="00:00:00.2702169" startTime="2015-01-10T17:08:26.7728730+01:00" endTime="2015-01-10T17:08:27.2468995+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5047476b-b4a6-416a-82ee-66a3976e000b">
+    </UnitTestResult>
+    <UnitTestResult executionId="7ac6ef2e-b165-4c28-8305-85c548c81d77" testId="08443ed7-b999-a5e4-7cad-8a7b4ff651a8" testName="CreateRoleSuccessGetIDNotEqualNums" computerName="DERRICK-PC" duration="00:00:00.1106144" startTime="2015-01-10T17:08:27.2478995+01:00" endTime="2015-01-10T17:08:27.3619085+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ac6ef2e-b165-4c28-8305-85c548c81d77">
+    </UnitTestResult>
+    <UnitTestResult executionId="81d01f80-e9cf-40db-8e0c-6f0d4d7b8c06" testId="13247df7-3d56-5a96-a517-506237ae74a1" testName="GetRoleByIdNotExistentTest" computerName="DERRICK-PC" duration="00:00:00.0030815" startTime="2015-01-10T17:08:27.3619085+01:00" endTime="2015-01-10T17:08:27.3679083+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81d01f80-e9cf-40db-8e0c-6f0d4d7b8c06">
+    </UnitTestResult>
+    <UnitTestResult executionId="dfe557aa-2860-4df8-a2fb-1b7702bf1d3b" testId="290e47ea-0820-016e-53eb-429e262ceaf8" testName="UpdateRoleExceedDescTest" computerName="DERRICK-PC" duration="00:00:00.0055208" startTime="2015-01-10T17:08:27.3689063+01:00" endTime="2015-01-10T17:08:27.3759061+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dfe557aa-2860-4df8-a2fb-1b7702bf1d3b">
+    </UnitTestResult>
+    <UnitTestResult executionId="a3751ad0-c9b9-4f6c-8935-30310375894b" testId="2cdc7137-401e-62e3-8dc6-f25ce01a537a" testName="CreateRoleTestBeneathCharacterLimitonName" computerName="DERRICK-PC" duration="00:00:00.0029397" startTime="2015-01-10T17:08:27.3769072+01:00" endTime="2015-01-10T17:08:27.3819075+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3751ad0-c9b9-4f6c-8935-30310375894b">
+    </UnitTestResult>
+    <UnitTestResult executionId="f3591a4a-25d8-4ee6-b299-207a6980ced9" testId="34bc5648-43a4-647f-4592-324cb0f819e1" testName="UpdateRoleTestMatchingDesc" computerName="DERRICK-PC" duration="00:00:00.0082200" startTime="2015-01-10T17:08:27.3829082+01:00" endTime="2015-01-10T17:08:27.3929067+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3591a4a-25d8-4ee6-b299-207a6980ced9">
+    </UnitTestResult>
+    <UnitTestResult executionId="f94354d6-455d-47b9-a173-0d7b9aa97250" testId="43e2e513-1209-95e9-89f2-7d77b3822c20" testName="CreateRoleTestExeedCharacterLimitonDesc" computerName="DERRICK-PC" duration="00:00:00.0028478" startTime="2015-01-10T17:08:27.3939067+01:00" endTime="2015-01-10T17:08:27.3989081+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f94354d6-455d-47b9-a173-0d7b9aa97250">
+    </UnitTestResult>
+    <UnitTestResult executionId="e79996c4-a20a-4ca6-9c25-373ed9a27d80" testId="48172837-7d7b-06f0-35d6-267216a40b7b" testName="UpdateRoleTestEmptyName" computerName="DERRICK-PC" duration="00:00:00.0043695" startTime="2015-01-10T17:08:27.3999076+01:00" endTime="2015-01-10T17:08:27.4059078+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e79996c4-a20a-4ca6-9c25-373ed9a27d80">
+    </UnitTestResult>
+    <UnitTestResult executionId="0119e6f7-622f-4743-8d58-14df732332ad" testId="4c9b7324-36bb-d462-95ec-80b271f6e1db" testName="GetRoleByIdExistTest" computerName="DERRICK-PC" duration="00:00:00.0043592" startTime="2015-01-10T17:08:27.4069078+01:00" endTime="2015-01-10T17:08:27.4129103+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0119e6f7-622f-4743-8d58-14df732332ad">
+    </UnitTestResult>
+    <UnitTestResult executionId="2cdb4dc0-7142-46f0-98a8-b7b2e53b8db5" testId="518e1dc2-ea68-15fc-c2d8-49c27186343b" testName="DeleteRoleSuccessfulTest" computerName="DERRICK-PC" duration="00:00:00.0047714" startTime="2015-01-10T17:08:27.4139091+01:00" endTime="2015-01-10T17:08:27.4199101+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2cdb4dc0-7142-46f0-98a8-b7b2e53b8db5">
+    </UnitTestResult>
+    <UnitTestResult executionId="aca74b14-20f0-432e-824e-f39081876bc4" testId="5766de9a-8684-e0c6-bc4e-4ffc1fb38afa" testName="UpdateRoleTestEmptyDesc" computerName="DERRICK-PC" duration="00:00:00.0044546" startTime="2015-01-10T17:08:27.4209093+01:00" endTime="2015-01-10T17:08:27.4269102+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aca74b14-20f0-432e-824e-f39081876bc4">
+    </UnitTestResult>
+    <UnitTestResult executionId="71c0cbe1-38d5-4b90-b7b1-c149b4612858" testId="5b0200b7-a653-51fa-4b4b-10b30e877396" testName="CreateRoleTestNoNumSymbRoleNameTest" computerName="DERRICK-PC" duration="00:00:00.0017853" startTime="2015-01-10T17:08:27.4279102+01:00" endTime="2015-01-10T17:08:27.4319097+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71c0cbe1-38d5-4b90-b7b1-c149b4612858">
+    </UnitTestResult>
+    <UnitTestResult executionId="3d44ef73-bc34-4e40-b64b-07ce6d21bbee" testId="5b505cd0-93f0-1c9c-0d7f-a858e9f6c7c2" testName="UpdateRoleEmptyTest" computerName="DERRICK-PC" duration="00:00:00.0115176" startTime="2015-01-10T17:08:27.4329100+01:00" endTime="2015-01-10T17:08:27.4459111+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d44ef73-bc34-4e40-b64b-07ce6d21bbee">
+    </UnitTestResult>
+    <UnitTestResult executionId="8ea37a02-3de4-4e92-92bc-5ed26d8bafe8" testId="5e6b146e-0888-cb7a-088c-ccd669e9fbae" testName="CreateRoleAlreadyExistTest" computerName="DERRICK-PC" duration="00:00:00.0028868" startTime="2015-01-10T17:08:27.4469111+01:00" endTime="2015-01-10T17:08:27.4519117+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ea37a02-3de4-4e92-92bc-5ed26d8bafe8">
+    </UnitTestResult>
+    <UnitTestResult executionId="ee075558-0d98-4604-83be-63d05fc9cba3" testId="5ff3e092-e0d6-8efb-0820-a7f9eab6437f" testName="CreateRoleSuccessEqualValueTest" computerName="DERRICK-PC" duration="00:00:00.0055515" startTime="2015-01-10T17:08:27.4519117+01:00" endTime="2015-01-10T17:08:27.4599115+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee075558-0d98-4604-83be-63d05fc9cba3">
+    </UnitTestResult>
+    <UnitTestResult executionId="fabad48e-2fd0-4850-8d2b-5cc27fafdf08" testId="609a6165-6aa3-ec7d-b95f-ef0ceae0efea" testName="UpdateRoleFewNameTest" computerName="DERRICK-PC" duration="00:00:00.0051588" startTime="2015-01-10T17:08:27.4609118+01:00" endTime="2015-01-10T17:08:27.4689119+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fabad48e-2fd0-4850-8d2b-5cc27fafdf08">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b5a4d92-a068-452d-9a53-37385d20c1c7" testId="63ba7a1c-0a9f-d475-4259-c631099d527c" testName="UpdateRoleTestRoleDescBad" computerName="DERRICK-PC" duration="00:00:00.0056998" startTime="2015-01-10T17:08:27.4689119+01:00" endTime="2015-01-10T17:08:27.4769132+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b5a4d92-a068-452d-9a53-37385d20c1c7">
+    </UnitTestResult>
+    <UnitTestResult executionId="24bc1185-16f2-417e-93ff-646e9acf3687" testId="64ef12f7-ea64-ac8b-d013-f82c0c6d531a" testName="UpdateRoleTestMatching1" computerName="DERRICK-PC" duration="00:00:00.0066070" startTime="2015-01-10T17:08:27.4779136+01:00" endTime="2015-01-10T17:08:27.4869160+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24bc1185-16f2-417e-93ff-646e9acf3687">
+    </UnitTestResult>
+    <UnitTestResult executionId="d1500095-d026-46a0-8d8e-4dfd122db0ae" testId="68a1d45e-cede-cf06-68f7-94564fd7feb2" testName="UpdateRoleTestNullDesc" computerName="DERRICK-PC" duration="00:00:00.0032527" startTime="2015-01-10T17:08:27.4869160+01:00" endTime="2015-01-10T17:08:27.4929158+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1500095-d026-46a0-8d8e-4dfd122db0ae">
+    </UnitTestResult>
+    <UnitTestResult executionId="c34e9e91-7170-4910-b94e-a29493da6723" testId="6b78d26e-4d0b-2d16-f840-efbea43b9f0d" testName="createRoleNullDescTest" computerName="DERRICK-PC" duration="00:00:00.0018574" startTime="2015-01-10T17:08:27.4929158+01:00" endTime="2015-01-10T17:08:27.4969130+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c34e9e91-7170-4910-b94e-a29493da6723">
+    </UnitTestResult>
+    <UnitTestResult executionId="79d2180f-f452-455f-ae9b-03c32036925c" testId="6bdc3103-b673-5cb9-be77-7f4ef84e4995" testName="DeleteRoleNegativeTest" computerName="DERRICK-PC" duration="00:00:00.0030056" startTime="2015-01-10T17:08:27.4979137+01:00" endTime="2015-01-10T17:08:27.5029143+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79d2180f-f452-455f-ae9b-03c32036925c">
+    </UnitTestResult>
+    <UnitTestResult executionId="f1d38d61-8474-4788-83a8-f18838a26c08" testId="74afa68e-2526-5c18-ee55-f2bbbbf2410a" testName="UpdateRoleExceedNameTest" computerName="DERRICK-PC" duration="00:00:00.0051756" startTime="2015-01-10T17:08:27.5039733+01:00" endTime="2015-01-10T17:08:27.5109148+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1d38d61-8474-4788-83a8-f18838a26c08">
+    </UnitTestResult>
+    <UnitTestResult executionId="73bf02c6-3dcf-4425-ad33-2d0647d54be9" testId="825e251e-6d29-e1a8-a155-4beac61e1b9d" testName="createRoleNullNameTest" computerName="DERRICK-PC" duration="00:00:00.0021014" startTime="2015-01-10T17:08:27.5119159+01:00" endTime="2015-01-10T17:08:27.5159154+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73bf02c6-3dcf-4425-ad33-2d0647d54be9">
+    </UnitTestResult>
+    <UnitTestResult executionId="89cb72af-ee11-46b1-a942-17b0e21b1f17" testId="842dc3df-3bff-9f2f-394d-17dfb132acc8" testName="CreateRoleSuccessEqualListTest" computerName="DERRICK-PC" duration="00:00:00.0058396" startTime="2015-01-10T17:08:27.5169142+01:00" endTime="2015-01-10T17:08:27.5249159+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89cb72af-ee11-46b1-a942-17b0e21b1f17">
+    </UnitTestResult>
+    <UnitTestResult executionId="04c647fc-f7b6-457f-9503-e580bd962d36" testId="8c5802aa-4574-61c9-1aca-d10adf54732d" testName="GetRolesValuesTest" computerName="DERRICK-PC" duration="00:00:00.0025857" startTime="2015-01-10T17:08:27.5259155+01:00" endTime="2015-01-10T17:08:27.5299161+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04c647fc-f7b6-457f-9503-e580bd962d36">
+    </UnitTestResult>
+    <UnitTestResult executionId="cfc06fc1-b8a9-4f46-a0b9-4d634b8e0b00" testId="8de55e15-6f0d-51c4-346e-226a8247d21b" testName="UpdateRoleExceedNull" computerName="DERRICK-PC" duration="00:00:00.0053105" startTime="2015-01-10T17:08:27.5309168+01:00" endTime="2015-01-10T17:08:27.5389162+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfc06fc1-b8a9-4f46-a0b9-4d634b8e0b00">
+    </UnitTestResult>
+    <UnitTestResult executionId="e4e66e49-effa-472b-ae23-1e486b139691" testId="9108f78e-1e8e-8ef5-c820-3bb2c6079aad" testName="CreateRoleSuccessNotEqualListTest" computerName="DERRICK-PC" duration="00:00:00.0054028" startTime="2015-01-10T17:08:27.5389162+01:00" endTime="2015-01-10T17:08:27.5469159+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4e66e49-effa-472b-ae23-1e486b139691">
+    </UnitTestResult>
+    <UnitTestResult executionId="dc550196-7073-40c3-8926-63d476a86995" testId="991a5087-ea0e-f2a5-a585-3462563b113a" testName="CreateRoleTestNoNumSymbRoleDescTest" computerName="DERRICK-PC" duration="00:00:00.0018443" startTime="2015-01-10T17:08:27.5479171+01:00" endTime="2015-01-10T17:08:27.5519162+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc550196-7073-40c3-8926-63d476a86995">
+    </UnitTestResult>
+    <UnitTestResult executionId="894f2af7-8547-480e-9dce-e640b7fb987e" testId="9ea9f69b-2b1d-ee50-651b-164059cc5540" testName="CreateRoleSuccessDescAlreadyExistTest" computerName="DERRICK-PC" duration="00:00:00.0055814" startTime="2015-01-10T17:08:27.5519162+01:00" endTime="2015-01-10T17:08:27.5599174+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="894f2af7-8547-480e-9dce-e640b7fb987e">
+    </UnitTestResult>
+    <UnitTestResult executionId="5451f1c0-3df5-4921-acc7-fba064130495" testId="b32547ec-a862-3b2b-2e66-bb246f894077" testName="DeleteRoleDoesNotExistTest" computerName="DERRICK-PC" duration="00:00:00.0028776" startTime="2015-01-10T17:08:27.5609178+01:00" endTime="2015-01-10T17:08:27.5659169+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5451f1c0-3df5-4921-acc7-fba064130495">
+    </UnitTestResult>
+    <UnitTestResult executionId="8d85025e-0350-49f9-a243-c6a492411ea9" testId="b3422950-13c8-9554-6949-90bd6cdc5364" testName="CreateRoleTestExeedCharacterLimitonName" computerName="DERRICK-PC" duration="00:00:00.0027324" startTime="2015-01-10T17:08:27.5659169+01:00" endTime="2015-01-10T17:08:27.5709179+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d85025e-0350-49f9-a243-c6a492411ea9">
+    </UnitTestResult>
+    <UnitTestResult executionId="0cb2ce9a-716d-42e2-8248-bfec92cbec9b" testId="b3b0da28-414b-614a-698b-37506007bccd" testName="GetRolesCountTest" computerName="DERRICK-PC" duration="00:00:00.0019872" startTime="2015-01-10T17:08:27.5719178+01:00" endTime="2015-01-10T17:08:27.5759177+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0cb2ce9a-716d-42e2-8248-bfec92cbec9b">
+    </UnitTestResult>
+    <UnitTestResult executionId="bf657a95-6ec3-4578-8cf9-1f198fadb80b" testId="b4e9415d-fade-486b-5f96-8d20a5983bca" testName="UpdateRoleTestNullName" computerName="DERRICK-PC" duration="00:00:00.0029864" startTime="2015-01-10T17:08:27.5759177+01:00" endTime="2015-01-10T17:08:27.5819171+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf657a95-6ec3-4578-8cf9-1f198fadb80b">
+    </UnitTestResult>
+    <UnitTestResult executionId="3dbc78b5-d729-4fe9-bb05-5d62b0c97a08" testId="b714d5f5-7caf-a6e5-210b-e06fc3334cf1" testName="GetRoleByIdBoundaryNegativeTest" computerName="DERRICK-PC" duration="00:00:00.0025872" startTime="2015-01-10T17:08:27.5819171+01:00" endTime="2015-01-10T17:08:27.5869185+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3dbc78b5-d729-4fe9-bb05-5d62b0c97a08">
+    </UnitTestResult>
+    <UnitTestResult executionId="b5979ac7-494b-48a5-a1c5-f71db1c66af0" testId="b7d9f2b4-b6e4-4fa3-8b3e-823a64c3ef77" testName="UpdateRoleTestMatchingName" computerName="DERRICK-PC" duration="00:00:00.0063691" startTime="2015-01-10T17:08:27.5879192+01:00" endTime="2015-01-10T17:08:27.5959197+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5979ac7-494b-48a5-a1c5-f71db1c66af0">
+    </UnitTestResult>
+    <UnitTestResult executionId="31dc2d68-ef35-41a7-955e-9b294356e3b8" testId="ba316aa0-52f0-dca8-87b4-1adcbf771adc" testName="UpdateRoleTestRoleNameBad" computerName="DERRICK-PC" duration="00:00:00.0047251" startTime="2015-01-10T17:08:27.5969193+01:00" endTime="2015-01-10T17:08:27.6039202+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31dc2d68-ef35-41a7-955e-9b294356e3b8">
+    </UnitTestResult>
+    <UnitTestResult executionId="d8123e29-f937-4742-a9fc-64e91d08e294" testId="c01bcd52-1e48-0139-9b3c-dcb9ac79f4f3" testName="createRoleEmptyTest" computerName="DERRICK-PC" duration="00:00:00.0018378" startTime="2015-01-10T17:08:27.6039202+01:00" endTime="2015-01-10T17:08:27.6079209+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8123e29-f937-4742-a9fc-64e91d08e294">
+    </UnitTestResult>
+    <UnitTestResult executionId="269c80af-45a8-4218-8916-4efbd2e0af79" testId="c2929299-8048-8810-66c8-d9708d4d9785" testName="UpdateRoleTestNotMatching" computerName="DERRICK-PC" duration="00:00:00.0063787" startTime="2015-01-10T17:08:27.6089212+01:00" endTime="2015-01-10T17:08:27.6169214+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="269c80af-45a8-4218-8916-4efbd2e0af79">
+    </UnitTestResult>
+    <UnitTestResult executionId="7e172d24-ecf0-439d-bece-7ab0f13592c1" testId="cfd83b9f-a3ce-c125-f187-fbcac6aad68f" testName="CreateRoleTestBeneathCharacterLimitonDesc" computerName="DERRICK-PC" duration="00:00:00.0029087" startTime="2015-01-10T17:08:27.6179209+01:00" endTime="2015-01-10T17:08:27.6229223+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e172d24-ecf0-439d-bece-7ab0f13592c1">
+    </UnitTestResult>
+    <UnitTestResult executionId="bda05472-7bc9-475b-bf89-c9f066940655" testId="d16f0b59-1491-428e-d22d-6bdc11e93b5f" testName="CreateRoleSuccessGetIDNotNullTest" computerName="DERRICK-PC" duration="00:00:00.0044450" startTime="2015-01-10T17:08:27.6229223+01:00" endTime="2015-01-10T17:08:27.6299229+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bda05472-7bc9-475b-bf89-c9f066940655">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a27870b-a061-4006-8765-3a2e918e7f00" testId="fc65208a-bc6c-c37d-e81b-cbb20529b86b" testName="UpdateRoleFewDescTest" computerName="DERRICK-PC" duration="00:00:00.0046216" startTime="2015-01-10T17:08:27.6309213+01:00" endTime="2015-01-10T17:08:27.6369211+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a27870b-a061-4006-8765-3a2e918e7f00">
+    </UnitTestResult>
+  </Results>
+</TestRun>
