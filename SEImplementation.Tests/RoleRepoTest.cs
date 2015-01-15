@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Transactions;
 using System.Data;
+using System.Data.Common;
 
 namespace SEImplementation.Tests
 {
@@ -44,8 +45,6 @@ namespace SEImplementation.Tests
             _trans.Dispose();
         }
 
-
-
         private TestContext testContextInstance;
 
         /// <summary>
@@ -75,6 +74,30 @@ namespace SEImplementation.Tests
             Role entry = new Role();
             entry.RoleName = "H3ll$";
             entry.RoleDesc = "Test";
+            target.CreateRole(entry);
+            target.DeleteRole(entry.RoleID);
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(NoNumberAndSymbolsAllowedException))]
+        public void CreateRoleTestNonASCIINameTest()
+        {
+            RoleRepo target = new RoleRepo();
+            Role entry = new Role();
+            entry.RoleName = "H«ll§";
+            entry.RoleDesc = "Test";
+            target.CreateRole(entry);
+            target.DeleteRole(entry.RoleID);
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(NoNumberAndSymbolsAllowedException))]
+        public void CreateRoleTestNonASCIIDescTest()
+        {
+            RoleRepo target = new RoleRepo();
+            Role entry = new Role();
+            entry.RoleName = "Test";
+            entry.RoleDesc = "H«ll§";
             target.CreateRole(entry);
             target.DeleteRole(entry.RoleID);
         }
@@ -164,7 +187,7 @@ namespace SEImplementation.Tests
             List<Role> actual = new List<Role>();
             actual = entity.Roles.ToList();
 
-            Assert.AreNotEqual(rList, actual);
+            Assert.AreNotEqual(rList.Count, actual.Count);
 
             target.DeleteRole(entry.RoleID);
         }
@@ -750,6 +773,51 @@ namespace SEImplementation.Tests
 
             //Updates the user inside the database
             actual.RoleName = "%%$23fdf";
+            try { target.UpdateRole(actual); }
+            finally
+            {
+                target.DeleteRole(actual.RoleID);
+            }
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(NoNumberAndSymbolsAllowedException))]
+        public void UpdateRoleTestRoleNameNonAscii()
+        {
+            RoleRepo target = new RoleRepo();
+            Role actual = new Role();
+            actual.RoleName = "roleTest";
+            actual.RoleDesc = "roleDesc";
+
+            entity.AddToRoles(actual);
+            entity.SaveChanges();
+            entity.Connection.Close();
+
+            //Updates the user inside the database
+            actual.RoleName = "HÉll¤";
+            try { target.UpdateRole(actual); }
+            finally
+            {
+                target.DeleteRole(actual.RoleID);
+            }
+        }
+
+
+        [TestMethod()]
+        [ExpectedException(typeof(NoNumberAndSymbolsAllowedException))]
+        public void UpdateRoleTestRoleDescNonAscii()
+        {
+            RoleRepo target = new RoleRepo();
+            Role actual = new Role();
+            actual.RoleName = "roleTest";
+            actual.RoleDesc = "roleDesc";
+
+            entity.AddToRoles(actual);
+            entity.SaveChanges();
+            entity.Connection.Close();
+
+            //Updates the user inside the database
+            actual.RoleDesc = "HÉll¤";
             try { target.UpdateRole(actual); }
             finally
             {

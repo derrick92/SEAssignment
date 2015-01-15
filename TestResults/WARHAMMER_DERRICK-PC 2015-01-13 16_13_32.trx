@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="cb344b94-4217-4fe5-a9f7-076818ae4ab4" name="WARHAMMER@DERRICK-PC 2015-01-13 16:13:32" runUser="Derrick-PC\WARHAMMER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="963ef6e7-5d08-4041-935a-2c6cf96d1f88">
+    <Deployment runDeploymentRoot="WARHAMMER_DERRICK-PC 2015-01-13 16_13_32">
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\DataAccess\bin\Debug\DataAccess.dll" />
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\Common\bin\Debug\Common.dll" />
+      <DeploymentItem filename="E:\Desktop\School\BSc\Semester 1\Software Engineering\TRALALA\SEImplementation\bin\SEImplementation.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-01-13T16:13:32.5589631+01:00" queuing="2015-01-13T16:13:34.6780807+01:00" start="2015-01-13T16:13:34.7290840+01:00" finish="2015-01-13T16:13:36.8872064+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateRoleTestNonASCIINameTest" storage="e:\desktop\school\bsc\semester 1\software engineering\tralala\seimplementation.tests\bin\debug\seimplementation.tests.dll" id="a533a4ce-3849-e61a-6a36-ac23cc44f688">
+      <Execution id="60f5c01c-b707-42a9-bb25-434c63ee463a" />
+      <TestMethod codeBase="E:/Desktop/School/BSc/Semester 1/Software Engineering/TRALALA/SEImplementation.Tests/bin/Debug/SEImplementation.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SEImplementation.Tests.RoleRepoTest, SEImplementation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateRoleTestNonASCIINameTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a533a4ce-3849-e61a-6a36-ac23cc44f688" executionId="60f5c01c-b707-42a9-bb25-434c63ee463a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="60f5c01c-b707-42a9-bb25-434c63ee463a" testId="a533a4ce-3849-e61a-6a36-ac23cc44f688" testName="CreateRoleTestNonASCIINameTest" computerName="DERRICK-PC" duration="00:00:00.3677730" startTime="2015-01-13T16:13:34.7420855+01:00" endTime="2015-01-13T16:13:35.3341191+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60f5c01c-b707-42a9-bb25-434c63ee463a">
+    </UnitTestResult>
+  </Results>
+</TestRun>
